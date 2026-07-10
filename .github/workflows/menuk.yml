@@ -1,0 +1,29 @@
+name: menuk-auto
+
+on:
+  workflow_dispatch:        # az appból a gomb ezt indítja
+  schedule:
+    - cron: '30 8 * * 1-5' # hétköznap 10:30 (nyáron) / 09:30 (télen) Budapest
+
+permissions:
+  contents: write
+
+jobs:
+  behuz:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Automata menü-behúzás
+        run: node scripts/auto_menuk.mjs
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      - name: Commit ha változott
+        run: |
+          git config user.name "menuk-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add menuk.json
+          git diff --cached --quiet || git commit -m "auto menük $(date +%F)"
+          git push
