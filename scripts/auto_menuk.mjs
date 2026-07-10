@@ -10,8 +10,10 @@ if (!GEMINI_KEY) {
   console.error("HIÁNYZIK a GEMINI_API_KEY repo-secret — állítsd be: Settings → Secrets and variables → Actions.");
   process.exit(1);
 }
-const MODEL = "gemini-2.0-flash";
+const MODEL = "gemini-2.0-flash";   // ha nem elérhető: gemini-flash-latest
 const FILE = "menuk.json";
+// teszthez: WEEK_OFFSET=-1 -> egy héttel korábbi Szalai-PDF (pl. amikor tárgyhéten zárva)
+const WEEK_OFFSET = parseInt(process.env.WEEK_OFFSET || "0", 10) || 0;
 
 // Melyik étterem megy automatán? Töröld a sorát, ha inkább kézzel (képpel) akarod.
 const AUTO = ["szalai", "vital", "soup4you"];
@@ -53,7 +55,7 @@ const ymd = d => d.toISOString().slice(0, 10);
 function monday() {
   const n = new Date();
   const m = new Date(n);
-  m.setUTCDate(n.getUTCDate() - ((n.getUTCDay() + 6) % 7));
+  m.setUTCDate(n.getUTCDate() - ((n.getUTCDay() + 6) % 7) + WEEK_OFFSET * 7);
   return m;
 }
 
