@@ -10,7 +10,7 @@ if (!GEMINI_KEY) {
   console.error("HIÁNYZIK a GEMINI_API_KEY repo-secret — állítsd be: Settings → Secrets and variables → Actions.");
   process.exit(1);
 }
-const MODEL = "gemini-2.5-flash";
+const MODEL = "gemini-2.0-flash";
 const FILE = "menuk.json";
 
 // Melyik étterem megy automatán? Töröld a sorát, ha inkább kézzel (képpel) akarod.
