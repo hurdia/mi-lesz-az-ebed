@@ -101,9 +101,10 @@
   label.fld{display:block; font-family:var(--mono); font-size:12px;
     letter-spacing:.08em; text-transform:uppercase; color:var(--ink-soft);
     margin:0 0 7px}
-  a.src{display:inline-block; margin-top:9px; font-family:var(--mono); font-size:12px;
+  a.src{display:inline-block; font-family:var(--mono); font-size:12px;
     color:var(--amber-deep); text-decoration:none}
   a.src:hover{text-decoration:underline}
+  .ph-meta{display:flex; align-items:baseline; gap:12px; flex-wrap:wrap}
   .row+.row{margin-top:16px}
 
   select,textarea{width:100%; font-family:var(--body); font-size:15px; color:var(--ink);
@@ -344,7 +345,7 @@
    (az Anthropic injektálja a hitelesítést). Netlify-on cseréld
    ezt a saját serverless proxydra, és a kulcsot szerveroldalon tartsd.
    ============================================================ */
-const GEMINI_MODEL = "gemini-2.0-flash";  // BYO-kulcs, közvetlen böngésző-hívás; bátran cseréld újabb modellre
+const GEMINI_MODEL = "gemini-2.0-flash";  // BYO-kulcs, közvetlen böngésző-hívás; ha nem elérhető, próbáld: gemini-flash-latest
 
 /* ============================================================
    KÖZÖS MENÜTÁR — statikus, Netlify-kredit nélkül
@@ -411,7 +412,8 @@ async function publish(){
     dirty = false; wipe = false; touched.clear();
     for(const k in store) delete store[k]; Object.assign(store, merged);
     renderAll(); updatePublishBtn();
-    setStatus("Publikálva ✓ — a Netlify ~1 percen belül frissíti az oldalt mindenkinek.");
+    setStatus("Publikálva ✓ — a Netlify frissíti az oldalt mindenkinek.");
+    countdownReload(60, "Publikálva ✓.");
   }catch(err){ setStatus("Publikálás sikertelen: " + err.message, true); }
 }
 
@@ -427,7 +429,8 @@ async function autoFetch(){
       body: JSON.stringify({ ref: GH.branch })
     });
     if(res.status === 204){
-      setStatus("Behúzás elindítva ✓ — Szalai + Wolt. ~2 perc, utána frissítsd az oldalt a friss menükért.");
+      setStatus("Behúzás elindítva ✓ — Szalai + Wolt.");
+      countdownReload(120, "Behúzás elindítva ✓.");
     } else {
       let d=""; try{ d=(await res.text()).slice(0,200); }catch{}
       throw new Error(res.status + " — a tokennek 'Actions: read/write' jog is kell. " + d);
@@ -724,6 +727,19 @@ function setStatus(msg, isErr){
   statusEl.textContent = msg;
   statusEl.className = "status" + (isErr ? " err" : "");
 }
+let _cdTimer = null;
+/* visszaszámláló: kiírja hátralévő időt, a végén frissíti az oldalt */
+function countdownReload(seconds, baseMsg){
+  clearInterval(_cdTimer);
+  let left = seconds;
+  const tick = () => {
+    if(left <= 0){ clearInterval(_cdTimer); setStatus(baseMsg + " Frissítés…"); location.reload(); return; }
+    setStatus(`${baseMsg} Frissítés ${left} mp múlva… (a fül nyitva marad belépve)`);
+    left--;
+  };
+  tick();
+  _cdTimer = setInterval(tick, 1000);
+}
 
 /* ---------------- AI hívás: közvetlen Gemini (a te kulcsoddal) ---------------- */
 async function callGemini(userContent){
@@ -908,7 +924,7 @@ function placeHead(r, obj){
   const href = (obj && obj.forras) || r.url;
   const src = href ? `<a class="src" href="${href}" target="_blank" rel="noopener">forrás ↗</a>` : "";
   const logo = LOGOS[r.id] ? `<img class="ph-logo" src="${LOGOS[r.id]}" alt="">` : "";
-  return `<div class="ph">${logo}<span class="ph-name">${r.name}</span>${dist}${src}</div>`;
+  return `<div class="ph">${logo}<span class="ph-name">${r.name}</span><span class="ph-meta">${dist}${src}</span></div>`;
 }
 
 /* napi nézet: 1 nap, 7 hely */
