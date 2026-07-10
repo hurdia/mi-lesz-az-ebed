@@ -2,6 +2,11 @@ name: menuk-auto
 
 on:
   workflow_dispatch:        # az appból a gomb ezt indítja
+    inputs:
+      week_offset:
+        description: 'Hét eltolás teszthez (pl. -1 = előző heti Szalai PDF)'
+        default: '0'
+        required: false
   schedule:
     - cron: '30 8 * * 1-5' # hétköznap 10:30 (nyáron) / 09:30 (télen) Budapest
 
@@ -20,6 +25,7 @@ jobs:
         run: node scripts/auto_menuk.mjs
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          WEEK_OFFSET: ${{ github.event.inputs.week_offset }}
       - name: Commit ha változott
         run: |
           git config user.name "menuk-bot"
