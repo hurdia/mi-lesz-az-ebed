@@ -293,7 +293,6 @@
       <div class="row" id="textRow" style="display:none">
         <label class="fld" for="txt">Menü szövege</label>
         <textarea id="txt" placeholder="Másold ide a Facebook-poszt / weboldal menüjének szövegét…"></textarea>
-        <div class="samples" id="samples"></div>
       </div>
 
       <button class="go" id="go">Feldolgozás</button>
@@ -345,7 +344,7 @@
    (az Anthropic injektálja a hitelesítést). Netlify-on cseréld
    ezt a saját serverless proxydra, és a kulcsot szerveroldalon tartsd.
    ============================================================ */
-const GEMINI_MODEL = "gemini-2.0-flash";  // BYO-kulcs, közvetlen böngésző-hívás; ha nem elérhető, próbáld: gemini-flash-latest
+const GEMINI_MODEL = "gemini-2.5-flash";  // ha "no longer available" jönne, engedélyezd a Gemini-számlázást, vagy tedd vissza 2.0-ra
 
 /* ============================================================
    KÖZÖS MENÜTÁR — statikus, Netlify-kredit nélkül
@@ -370,6 +369,12 @@ async function loadShared(){
     try{ const r = await window.storage.get(STORE_KEY, true); return r ? JSON.parse(r.value) : {}; }
     catch{ return {}; }
   }
+  // Közvetlenül a GitHubról olvasunk (nem a Netlify-deployból), így a menüfrissítés
+  // nem igényel Netlify-deployt -> nem fogyaszt kreditet.
+  const raw = `https://raw.githubusercontent.com/${GH.owner}/${GH.repo}/${GH.branch}/${GH.file}?ts=` + Date.now();
+  try{ const res = await fetch(raw, { cache:"no-store" });
+       if(res.ok) return await res.json(); }catch{}
+  // tartalék: a deployolt fájl (ha a GitHub-olvasás nem menne)
   try{ const res = await fetch(GH.file + "?ts=" + Date.now(), { cache:"no-store" });
        if(res.ok) return await res.json(); }catch{}
   return {};
@@ -412,8 +417,7 @@ async function publish(){
     dirty = false; wipe = false; touched.clear();
     for(const k in store) delete store[k]; Object.assign(store, merged);
     renderAll(); updatePublishBtn();
-    setStatus("Publikálva ✓ — a Netlify frissíti az oldalt mindenkinek.");
-    countdownReload(60, "Publikálva ✓.");
+    setStatus("Publikálva ✓ — a friss menü már él (mindenki a GitHubról olvassa).");
   }catch(err){ setStatus("Publikálás sikertelen: " + err.message, true); }
 }
 
@@ -430,7 +434,7 @@ async function autoFetch(){
     });
     if(res.status === 204){
       setStatus("Behúzás elindítva ✓ — Szalai + Wolt.");
-      countdownReload(120, "Behúzás elindítva ✓.");
+      countdownReload(150, "Behúzás fut a háttérben ✓. Ha nem jelenik meg, kicsit később frissíts rá.");
     } else {
       let d=""; try{ d=(await res.text()).slice(0,200); }catch{}
       throw new Error(res.status + " — a tokennek 'Actions: read/write' jog is kell. " + d);
@@ -461,58 +465,6 @@ const RESTAURANTS = [
 ];
 
 /* --- minta szövegek a gyors teszthez (a te valódi posztjaidból) --- */
-const SAMPLES = {
-  fuszeres:
-`2026.06.29. – 07.03. között is minden nap frissen készülő levesekkel és házias fogásokkal várunk benneteket ebédidőben.
-Hétfő
-Kovászosuborka-krémleves kolbászmorzsával (gluténmentes)
-Párizsi szelet újhagymás burgonyapürével és savanyúsággal
-Kedd
-Görögdinnyés-fetás saláta (gluténmentes)
-Zöld pestós spagetti grillezett csirkemellel
-Szerda
-Palócleves (gluténmentes)
-Rántott cukkini rizzsel és tartármártással
-Csütörtök
-Gazpacho (laktózmentes, gluténmentes)
-Túrógombóc édes tejföllel
-Péntek
-Hideg sárgadinnye-krémleves (gluténmentes)
-Fűszeres sertésszűz rukkolás lilakáposzta-salátával (laktózmentes, gluténmentes)
-Menü: 2990 Ft
-Leves: 1500 Ft
-Főétel: 2650 Ft
-Csomagolás: 150 Ft / étel`,
-  marka:
-`Ajánlatunk 2026. június 29- július 3-ig:
-Hétfő:
-Hideg meggyleves 1390 Ft
-Paprikás krumpli debrecenivel 1790 Ft
-Bakonyi csirkeragu (mellfiléből) kagylótészta 1990 Ft
-Vajbab főzelék, sertéspörkölt 1490 Ft
-Kedd:
-Hideg meggyleves 1390 Ft
-Sült csirkecomb, párolt rizs 1790 Ft
-Füstölt sajttal töltött csirkemell filé rántva, burgonyapüré 2190 Ft
-Lencsefőzelék, fasírt 1490 Ft
-Szerda:
-Hideg meggyleves 1390 Ft
-Rakott karfiol 1890 Ft
-Rántott borda, sajtos, magvas bundában, hasábburgonya 1990 Ft
-Zöldborsó főzelék virslivel 1490 Ft
-Csütörtök:
-Hideg meggyleves 1390 Ft
-Babgulyás 1590 Ft
-Roston csirkemell görögsalátával 2190 Ft
-Csirkemell ragu Stroganoff módra, párolt rizs 1990 Ft
-Paradicsomos káposzta, sült tarja 1690 Ft
-Péntek:
-Hideg meggyleves 1390 Ft
-Palócleves burgonyagombóccal 1590 Ft
-Carbonara spagetti 1890 Ft
-Sült hekk, hasábburgonya 2390 Ft
-Mákos guba, vaníliaöntet 1490 Ft`,
-};
 
 /* --- a kinyerő rendszerprompt --- */
 const SYSTEM = `Te egy éttermi menüt strukturáló motor vagy. A bemenet egy magyar étterem napi vagy heti menüje (szöveg vagy kép). Kinyered a menüt és KIZÁRÓLAG egyetlen JSON objektumot adsz vissza — semmi bevezető, semmi magyarázat, semmi Markdown-kerítés.
@@ -547,15 +499,7 @@ RESTAURANTS.forEach(r => {
   o.value = r.id; o.textContent = r.name; restSel.appendChild(o);
 });
 
-function renderSamples(){
-  const id = restSel.value, box = $("#samples"); box.innerHTML = "";
-  if (SAMPLES[id]){
-    const b = document.createElement("button");
-    b.textContent = "Minta beillesztése";
-    b.onclick = () => { txt.value = SAMPLES[id]; setStatus(""); };
-    box.appendChild(b);
-  }
-}
+function renderSamples(){ /* „Minta beillesztése" eltávolítva — csak valódi szöveg/kép megy */ }
 restSel.onchange = renderSamples;
 renderSamples();
 
