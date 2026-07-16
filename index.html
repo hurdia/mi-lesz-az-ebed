@@ -238,7 +238,7 @@
 <div class="wrap">
   <header class="top">
     <p class="eyebrow">Ebéd · Győr · adatmotor</p>
-    <h1>Mi lesz az ebéd?</h1>
+    <h1 id="title" title="Kattints a frissítéshez" style="cursor:pointer">Mi lesz az ebéd?</h1>
   </header>
 
   <p class="logos-label">Menük — kattints a megnyitáshoz (új ablakban)</p>
@@ -397,15 +397,20 @@ async function publish(){
   const headers = { "Authorization":"Bearer " + ghToken, "Accept":"application/vnd.github+json" };
   setStatus("Publikálás a GitHubra…");
   try{
-    let sha = null;
+    let sha = null, base = {};
     const g = await fetch(`${api}?ref=${GH.branch}`, { headers });
-    if (g.status === 200) sha = (await g.json()).sha;
-    else if (g.status === 401 || g.status === 403)
+    if (g.status === 200){
+      const j = await g.json();
+      sha = j.sha;
+      // Az összefésülés ALAPJA a GitHub AKTUÁLIS tartalma (nem a Netlify-másolat, ami a
+      // deploy-kihagyás miatt elavult). Így semmi nem vész el, amit nem most szerkesztettél.
+      if(!wipe && j.content){
+        try{ base = JSON.parse(decodeURIComponent(escape(atob(j.content.replace(/\s/g,""))))); }catch{}
+      }
+    } else if (g.status === 401 || g.status === 403){
       throw new Error(g.status + " — a token hibás, vagy nincs 'Contents: read/write' joga a repóra.");
-    // friss alap a szerverről (a bot közben frissíthetett), rá a most szerkesztett éttermek
-    let base = {};
-    if(!wipe){ try{ const rr = await fetch(GH.file + "?ts=" + Date.now(), { cache:"no-store" });
-                    if(rr.ok) base = await rr.json(); }catch{} }
+    }
+    // (404 = még nincs fájl -> base marad {}, sha marad null)
     const merged = wipe ? { ...store } : { ...base };
     touched.forEach(id => { if(store[id]) merged[id] = store[id]; });
     const content = btoa(unescape(encodeURIComponent(JSON.stringify(merged, null, 1))));
@@ -478,6 +483,7 @@ Szabályok:
 - A 'cimkek' csak a szövegben/zárójelben ténylegesen jelölt diétás jelölés lehet: "gluténmentes","laktózmentes","vegán","vegetáriánus". Ne találj ki címkét.
 - Ha az étterem A/B/C/D variánsokat ad ugyanarra a napra, mindegyik külön tétel, a betű a 'variar'-ban.
 - A "menü" kategória a komplett (leves+főétel) csomag, ha külön áron hirdetik.
+- Ha a szöveg több "Menü: (ár)" blokkot sorol, ahol mindegyik egy választható leves + egy konkrét főétel, akkor MINDEGYIK blokk külön "menü" tétel: a 'nev' a konkrét főétel (pl. "Választott leves + Cigánypecsenye"), az 'ar' a blokk ára. A felsorolt leveseket ettől függetlenül vedd fel külön "leves" tételként is.
 - Zárt nap: "zarva":true, üres "tetelek".
 - Ha az 'idoszak.tol' ismert, számold ki minden nap 'datum' mezőjét (hétfő = tol, kedd = tol+1, …).
 - Ismeretlen mező: null, illetve üres tömb a címkéknél.
@@ -620,6 +626,7 @@ $("#logoutBtn").onclick = () => {
 $("#publishBtn").onclick = publish;
 $("#autoBtn").onclick = autoFetch;
 $("#loginToggle").onclick = () => document.body.classList.add("show-auth");
+$("#title").onclick = () => location.reload();
 $("#keysToggle").onclick = () => document.body.classList.add("show-keys");
 
 /* a login előbukkan #admin URL-lel is; a felhasználónevet előtöltjük, ha van már széf */
@@ -705,7 +712,7 @@ async function callGemini(userContent){
     headers:{ "Content-Type":"application/json" },
     body: JSON.stringify({
       contents:[{ parts }],
-      generationConfig:{ responseMimeType:"application/json", maxOutputTokens:4096 }
+      generationConfig:{ responseMimeType:"application/json", maxOutputTokens:8192 }
     })
   });
   if(res.status === 400 || res.status === 403){
@@ -724,7 +731,11 @@ function extractJSON(text){
   let t = text.replace(/```json/gi,"").replace(/```/g,"").trim();
   const a = t.indexOf("{"), b = t.lastIndexOf("}");
   if(a>=0 && b>a) t = t.slice(a, b+1);
-  return JSON.parse(t);
+  try{ return JSON.parse(t); }
+  catch(e){
+    // rossz vezérlőkarakterek (pl. nyers sortörés stringen belül) -> takarítás és újrapróba
+    return JSON.parse(t.replace(/[\u0000-\u001F]/g, " "));
+  }
 }
 
 /* ---------------- feldolgozás ---------------- */
