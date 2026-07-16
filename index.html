@@ -842,12 +842,9 @@ function findDay(obj, idx){
 }
 /* van-e az étteremnek erre a hétre szóló, feltöltött menüje? (a fix helyek mindig aktívak) */
 function activeThisWeek(obj){
-  if(!obj) return false;
-  const monS = ymd(mondayThisWeek());
-  const ig = obj.idoszak && obj.idoszak.ig;
-  if(ig && ig < monS) return false;                          // egyértelműen lejárt (múlt heti vagy régebbi) -> elrejt
-  const nap = obj.napok || [];
-  return nap.some(d => (d.tetelek||[]).length || d.zarva);   // van feltöltött tartalom -> mutat
+  // jelenlét-alapú: ha van feltöltött menütartalom (tétel vagy zárva-jelölés), megjelenik.
+  // (A dátum-alapú szűrés túl törékeny volt; a régi adatot Ürítéssel vagy új feltöltéssel cseréld.)
+  return !!obj && (obj.napok||[]).some(d => (d.tetelek||[]).length || d.zarva);
 }
 
 /* HTML-darabok */
