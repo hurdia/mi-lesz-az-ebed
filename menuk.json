@@ -139,8 +139,8 @@
  "szalai": {
   "etterem": "Szalai Vendéglő",
   "idoszak": {
-   "tol": "2026-06-13",
-   "ig": "2026-06-19"
+   "tol": "2026-07-13",
+   "ig": "2026-07-19"
   },
   "arak": {
    "leves": null,
@@ -151,13 +151,13 @@
   "napok": [
    {
     "nap": "hétfő",
-    "datum": "2026-06-13",
+    "datum": "2026-07-13",
     "zarva": true,
     "tetelek": []
    },
    {
     "nap": "kedd",
-    "datum": "2026-06-14",
+    "datum": "2026-07-14",
     "zarva": false,
     "tetelek": [
      {
@@ -192,7 +192,7 @@
    },
    {
     "nap": "szerda",
-    "datum": "2026-06-15",
+    "datum": "2026-07-15",
     "zarva": false,
     "tetelek": [
      {
@@ -203,7 +203,7 @@
       "cimkek": []
      },
      {
-      "nev": "Gulyás leves + Burgonyaszirmos rántott borda",
+      "nev": "Gulyás leves + Burgonyazirmos rántott borda",
       "kategoria": "menü",
       "variar": "B",
       "ar": 3100,
@@ -227,7 +227,7 @@
    },
    {
     "nap": "csütörtök",
-    "datum": "2026-06-16",
+    "datum": "2026-07-16",
     "zarva": false,
     "tetelek": [
      {
@@ -262,7 +262,7 @@
    },
    {
     "nap": "péntek",
-    "datum": "2026-06-17",
+    "datum": "2026-07-17",
     "zarva": false,
     "tetelek": [
      {
@@ -297,7 +297,7 @@
    },
    {
     "nap": "szombat",
-    "datum": "2026-06-18",
+    "datum": "2026-07-18",
     "zarva": false,
     "tetelek": [
      {
@@ -332,7 +332,7 @@
    },
    {
     "nap": "vasárnap",
-    "datum": "2026-06-19",
+    "datum": "2026-07-19",
     "zarva": true,
     "tetelek": []
    }
@@ -746,8 +746,8 @@
  "marka": {
   "etterem": "Márka étterem",
   "idoszak": {
-   "tol": "2026-07-06",
-   "ig": "2026-07-10"
+   "tol": "2026-07-13",
+   "ig": "2026-07-17"
   },
   "arak": {
    "leves": null,
@@ -758,7 +758,7 @@
   "napok": [
    {
     "nap": "hétfő",
-    "datum": "2026-07-06",
+    "datum": "2026-07-13",
     "zarva": false,
     "tetelek": [
      {
@@ -769,21 +769,21 @@
       "cimkek": []
      },
      {
-      "nev": "Káposztás tészta",
+      "nev": "Csirkemell ragu \"jóasszony\" módra, párolt rizs",
       "kategoria": "főétel",
       "variar": null,
-      "ar": 1490,
+      "ar": 1990,
       "cimkek": []
      },
      {
-      "nev": "Gnocchi Alfredo (csirkemell, tejszín, gomba, sajt)",
+      "nev": "Bácskai rizses hús, csemege uborka",
       "kategoria": "főétel",
       "variar": null,
-      "ar": 2190,
+      "ar": 1990,
       "cimkek": []
      },
      {
-      "nev": "Vágott borsó főzelék, sertéspörkölt",
+      "nev": "Zöldborsó főzelék virslivel",
       "kategoria": "főétel",
       "variar": null,
       "ar": 1490,
@@ -793,7 +793,7 @@
    },
    {
     "nap": "kedd",
-    "datum": "2026-07-07",
+    "datum": "2026-07-14",
     "zarva": false,
     "tetelek": [
      {
@@ -804,21 +804,21 @@
       "cimkek": []
      },
      {
-      "nev": "Tejszínes, sajtos csirkemell szelet, párolt rizs",
+      "nev": "Paradicsomos húsgombóc, főtt burgonya",
       "kategoria": "főétel",
       "variar": null,
-      "ar": 2290,
+      "ar": 1990,
       "cimkek": []
      },
      {
-      "nev": "Szilvatöltelékes gombóc fahéjas porcukorral",
-      "kategoria": "desszert",
+      "nev": "Brassói aprópecsenye, steak burgonya",
+      "kategoria": "főétel",
       "variar": null,
-      "ar": 1590,
+      "ar": 2190,
       "cimkek": []
      },
      {
-      "nev": "Kelkáposzta főzelék debrecenivel",
+      "nev": "Tökfőzelék sertéspörkölttel",
       "kategoria": "főétel",
       "variar": null,
       "ar": 1490,
@@ -828,7 +828,7 @@
    },
    {
     "nap": "szerda",
-    "datum": "2026-07-08",
+    "datum": "2026-07-15",
     "zarva": false,
     "tetelek": [
      {
@@ -839,21 +839,21 @@
       "cimkek": []
      },
      {
-      "nev": "Rakott brokkoli",
+      "nev": "Erdélyi rakott káposzta",
       "kategoria": "főétel",
       "variar": null,
-      "ar": 1890,
+      "ar": 2090,
       "cimkek": []
      },
      {
-      "nev": "Mandulás csirkemell, kukoricás rizs",
+      "nev": "Cordon bleu (karajból), burgonyapüré",
       "kategoria": "főétel",
       "variar": null,
-      "ar": 1990,
+      "ar": 2290,
       "cimkek": []
      },
      {
-      "nev": "Burgonya főzelék, csirkepörkölt (mellfiléből)",
+      "nev": "Spenót, főtt burgonya, 2 db főtt tojás",
       "kategoria": "főétel",
       "variar": null,
       "ar": 1490,
@@ -863,7 +863,7 @@
    },
    {
     "nap": "csütörtök",
-    "datum": "2026-07-09",
+    "datum": "2026-07-16",
     "zarva": false,
     "tetelek": [
      {
@@ -874,28 +874,28 @@
       "cimkek": []
      },
      {
-      "nev": "Húsleves májgaluskával",
+      "nev": "Csirke raguleves (mellfiléből)",
       "kategoria": "leves",
       "variar": null,
-      "ar": 1190,
+      "ar": 1490,
       "cimkek": []
      },
      {
-      "nev": "Lassan sült tarja, tört burgonya, párolt vörös káposzta",
+      "nev": "Töltött csirkecomb, rizibizi",
       "kategoria": "főétel",
       "variar": null,
-      "ar": 2390,
+      "ar": 2090,
       "cimkek": []
      },
      {
-      "nev": "Csikós tokány kagylótésztával",
+      "nev": "Magyaros csirkemáj tarhonyával",
       "kategoria": "főétel",
       "variar": null,
-      "ar": 2190,
+      "ar": 1990,
       "cimkek": []
      },
      {
-      "nev": "Fejtett bab főzelék, fasírt",
+      "nev": "Lencsefőzelék, fasírt",
       "kategoria": "főétel",
       "variar": null,
       "ar": 1490,
@@ -905,7 +905,7 @@
    },
    {
     "nap": "péntek",
-    "datum": "2026-07-10",
+    "datum": "2026-07-17",
     "zarva": false,
     "tetelek": [
      {
@@ -916,28 +916,28 @@
       "cimkek": []
      },
      {
-      "nev": "Jókai bableves",
+      "nev": "Frankfurti leves",
       "kategoria": "leves",
       "variar": null,
-      "ar": 1590,
+      "ar": 1490,
       "cimkek": []
      },
      {
-      "nev": "Rántott csirkemell, majonézes burgonyasaláta",
+      "nev": "Szezámmagos csirkemell rögök fűszeres burgonyával, majonézes káposztasaláta",
       "kategoria": "főétel",
       "variar": null,
-      "ar": 2290,
+      "ar": 2390,
       "cimkek": []
      },
      {
-      "nev": "Pad Thai csirkemell",
+      "nev": "Bolognai spagetti",
       "kategoria": "főétel",
       "variar": null,
-      "ar": 2290,
+      "ar": 2090,
       "cimkek": []
      },
      {
-      "nev": "Császármorzsa baracklekvárral",
+      "nev": "Rizsfelfújt eperlekvárral",
       "kategoria": "desszert",
       "variar": null,
       "ar": 1490,
