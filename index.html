@@ -297,7 +297,7 @@
 
       <button class="go" id="go">Feldolgozás</button>
       <p class="status" id="status"></p>
-      <p class="shared-note">A feldolgozott menük itt előnézetként jelennek meg — a hét végi <strong>Publikálás</strong> teszi ki őket mindenkinek.</p>
+      <p class="shared-note">A feldolgozott menük itt előnézetként jelennek meg — a <strong>Publikálás</strong> gombbal teszed ki őket mindenkinek.</p>
     </section>
 
     <!-- KIMENET -->
@@ -843,15 +843,11 @@ function findDay(obj, idx){
 /* van-e az étteremnek erre a hétre szóló, feltöltött menüje? (a fix helyek mindig aktívak) */
 function activeThisWeek(obj){
   if(!obj) return false;
-  const monS = ymd(mondayThisWeek()), friS = ymd(dateForDay(4));
-  const ap = obj.idoszak || {};
-  if(ap.tol || ap.ig){                                   // megadott időszak: fedje át a hetet
-    const tol = ap.tol || ap.ig, ig = ap.ig || ap.tol;
-    return tol <= friS && ig >= monS;
-  }
+  const monS = ymd(mondayThisWeek());
+  const ig = obj.idoszak && obj.idoszak.ig;
+  if(ig && ig < monS) return false;                          // egyértelműen lejárt (múlt heti vagy régebbi) -> elrejt
   const nap = obj.napok || [];
-  if(nap.some(d => d.datum && d.datum >= monS && d.datum <= friS)) return true;   // e-heti dátum
-  return nap.some(d => (d.tetelek||[]).length || d.zarva);                        // csak napnevek: elfogadjuk
+  return nap.some(d => (d.tetelek||[]).length || d.zarva);   // van feltöltött tartalom -> mutat
 }
 
 /* HTML-darabok */
