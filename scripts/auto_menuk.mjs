@@ -10,7 +10,7 @@ if (!GEMINI_KEY) {
   console.error("HIÁNYZIK a GEMINI_API_KEY repo-secret — állítsd be: Settings → Secrets and variables → Actions.");
   process.exit(1);
 }
-const MODEL = "gemini-3.1-flash";   // ha "not found": gemini-3.1-flash-lite vagy gemini-3.5-flash
+const MODEL = "gemini-3.1-flash-lite";   // GA 3.1 Flash-Lite; ha kevés lenne: gemini-3.5-flash
 const FILE = "menuk.json";
 // teszthez: WEEK_OFFSET=-1 -> egy héttel korábbi Szalai-PDF (pl. amikor tárgyhéten zárva)
 const WEEK_OFFSET = parseInt(process.env.WEEK_OFFSET || "0", 10) || 0;
