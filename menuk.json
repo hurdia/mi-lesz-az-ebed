@@ -2,8 +2,8 @@
  "fuszeres": {
   "etterem": "A Fűszeres",
   "idoszak": {
-   "tol": "2026-07-13",
-   "ig": "2026-07-17"
+   "tol": null,
+   "ig": null
   },
   "arak": {
    "leves": 1500,
@@ -14,7 +14,7 @@
   "napok": [
    {
     "nap": "hétfő",
-    "datum": "2026-07-13",
+    "datum": null,
     "zarva": false,
     "tetelek": [
      {
@@ -22,9 +22,7 @@
       "kategoria": "leves",
       "variar": null,
       "ar": null,
-      "cimkek": [
-       "gluténmentes"
-      ]
+      "cimkek": []
      },
      {
       "nev": "Töltött cukkini",
@@ -39,7 +37,7 @@
    },
    {
     "nap": "kedd",
-    "datum": "2026-07-14",
+    "datum": null,
     "zarva": false,
     "tetelek": [
      {
@@ -65,7 +63,7 @@
    },
    {
     "nap": "szerda",
-    "datum": "2026-07-15",
+    "datum": null,
     "zarva": false,
     "tetelek": [
      {
@@ -88,7 +86,7 @@
    },
    {
     "nap": "csütörtök",
-    "datum": "2026-07-16",
+    "datum": null,
     "zarva": false,
     "tetelek": [
      {
@@ -111,7 +109,7 @@
    },
    {
     "nap": "péntek",
-    "datum": "2026-07-17",
+    "datum": null,
     "zarva": false,
     "tetelek": [
      {
@@ -125,7 +123,7 @@
       ]
      },
      {
-      "nev": "Citromborsos csirkecombok zöldfűszeres burgonyapürével, savanyúsággal",
+      "nev": "Citromborsos csirkecomb zöldfűszeres burgonyapürével, savanyúsággal",
       "kategoria": "főétel",
       "variar": null,
       "ar": null,
@@ -205,7 +203,7 @@
       "cimkek": []
      },
      {
-      "nev": "Gulyás leves + Burgonyazirmos rántott borda",
+      "nev": "Gulyás leves + Burgonyaszirmos rántott borda",
       "kategoria": "menü",
       "variar": "B",
       "ar": 3100,
@@ -660,13 +658,13 @@
   "forras": "https://dolcevitaetterem.hu/heti-menu/"
  },
  "soup4you": {
-  "etterem": "Márka étterem",
+  "etterem": "Soup4You",
   "idoszak": {
-   "tol": "2026-07-06",
-   "ig": "2026-07-10"
+   "tol": "2026-07-16",
+   "ig": "2026-07-16"
   },
   "arak": {
-   "leves": null,
+   "leves": 1490,
    "foetel": null,
    "menu": null,
    "csomagolas": null
@@ -678,17 +676,66 @@
     "zarva": false,
     "tetelek": [
      {
-      "nev": "Hideg meggyleves",
+      "nev": "CSÜLKÖS BABGULYÁS HÁZI CSIPKEDETTEL, FRISS RÉPÁVAL, ZELLERREL",
       "kategoria": "leves",
       "variar": null,
-      "ar": 1390,
+      "ar": null,
       "cimkek": []
      },
      {
-      "nev": "Húsleves májgaluskával",
+      "nev": "BAKONYI BETYÁRLEVES BELESZAGGATOTT GALUSKÁVAL, FRISS ZÖLDSÉGEKKEL, GOMBÁVAL, TEJFÖLÖSEN",
       "kategoria": "leves",
       "variar": null,
-      "ar": 1190,
+      "ar": null,
+      "cimkek": []
+     },
+     {
+      "nev": "KARFIOL LEVES FRISS KARFIOLBÓL, RÉPÁVAL, KARALÁBÉVAL, PETREZSELYEMGYÖKÉRREL",
+      "kategoria": "leves",
+      "variar": null,
+      "ar": null,
+      "cimkek": []
+     },
+     {
+      "nev": "HIDEG TRÓPUSI GYÜMÖLCSKRÉMLEVES, HABBAL",
+      "kategoria": "leves",
+      "variar": null,
+      "ar": null,
+      "cimkek": []
+     },
+     {
+      "nev": "Választott leves + CIGÁNYPECSENYE TEPSIS FŰSZERES BURGONYAGEREZDEKKEL, KAKASTARÉJ SZALONNÁVAL",
+      "kategoria": "menü",
+      "variar": null,
+      "ar": 3400,
+      "cimkek": []
+     },
+     {
+      "nev": "Választott leves + SZÉKELYKÁPOSZTA, HÁZI HÚSGOMBÓCCAL, TEJFÖLLEL",
+      "kategoria": "menü",
+      "variar": null,
+      "ar": 3400,
+      "cimkek": []
+     },
+     {
+      "nev": "Választott leves + TEJSZÍNES SPENÓTFŐZELÉK, FŐTT TOJÁSSAL",
+      "kategoria": "menü",
+      "variar": null,
+      "ar": 2990,
+      "cimkek": []
+     },
+     {
+      "nev": "Választott leves + RÁNTOTT KARAJ (2 szelet) PÁROLT RIZZSEL",
+      "kategoria": "menü",
+      "variar": null,
+      "ar": 3950,
+      "cimkek": []
+     },
+     {
+      "nev": "Választott leves + RÁNTOTT CSIRKEMELL, PÁROLT RIZZSEL",
+      "kategoria": "menü",
+      "variar": null,
+      "ar": 3950,
       "cimkek": []
      }
     ]
