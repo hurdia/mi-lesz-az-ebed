@@ -139,8 +139,8 @@
  "szalai": {
   "etterem": "Szalai Vendéglő",
   "idoszak": {
-   "tol": "2026-07-13",
-   "ig": "2026-07-19"
+   "tol": "2026-06-13",
+   "ig": "2026-06-19"
   },
   "arak": {
    "leves": null,
@@ -151,13 +151,13 @@
   "napok": [
    {
     "nap": "hétfő",
-    "datum": "2026-07-13",
+    "datum": "2026-06-13",
     "zarva": true,
     "tetelek": []
    },
    {
     "nap": "kedd",
-    "datum": "2026-07-14",
+    "datum": "2026-06-14",
     "zarva": false,
     "tetelek": [
      {
@@ -192,7 +192,7 @@
    },
    {
     "nap": "szerda",
-    "datum": "2026-07-15",
+    "datum": "2026-06-15",
     "zarva": false,
     "tetelek": [
      {
@@ -203,7 +203,7 @@
       "cimkek": []
      },
      {
-      "nev": "Gulyás leves + Burgonyazirmos rántott borda",
+      "nev": "Gulyás leves + Burgonyaszirmos rántott borda",
       "kategoria": "menü",
       "variar": "B",
       "ar": 3100,
@@ -227,7 +227,7 @@
    },
    {
     "nap": "csütörtök",
-    "datum": "2026-07-16",
+    "datum": "2026-06-16",
     "zarva": false,
     "tetelek": [
      {
@@ -262,7 +262,7 @@
    },
    {
     "nap": "péntek",
-    "datum": "2026-07-17",
+    "datum": "2026-06-17",
     "zarva": false,
     "tetelek": [
      {
@@ -297,7 +297,7 @@
    },
    {
     "nap": "szombat",
-    "datum": "2026-07-18",
+    "datum": "2026-06-18",
     "zarva": false,
     "tetelek": [
      {
@@ -332,12 +332,14 @@
    },
    {
     "nap": "vasárnap",
-    "datum": "2026-07-19",
+    "datum": "2026-06-19",
     "zarva": true,
     "tetelek": []
    }
   ],
-  "forras": "https://www.szalaivendeglo.hu/index.php/hu/heti-menue"
+  "forras": "https://www.szalaivendeglo.hu/index.php/hu/heti-menue",
+  "auto": true,
+  "frissitve": "2026-07-16T13:07:46.707Z"
  },
  "faceroom": {
   "etterem": "Faceroom",
