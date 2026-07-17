@@ -139,8 +139,8 @@
  "szalai": {
   "etterem": "Szalai Vendéglő",
   "idoszak": {
-   "tol": "2026-07-13",
-   "ig": "2026-07-19"
+   "tol": "2026-06-13",
+   "ig": "2026-06-19"
   },
   "arak": {
    "leves": null,
@@ -151,38 +151,38 @@
   "napok": [
    {
     "nap": "hétfő",
-    "datum": "2026-07-13",
+    "datum": "2026-06-13",
     "zarva": true,
     "tetelek": []
    },
    {
     "nap": "kedd",
-    "datum": "2026-07-14",
+    "datum": "2026-06-14",
     "zarva": false,
     "tetelek": [
      {
-      "nev": "Húsleves + Sertéskaraj snidlinges mártással",
+      "nev": "Húsleves, Sertéskaraj snidlinges mártással",
       "kategoria": "menü",
       "variar": "A",
       "ar": 2950,
       "cimkek": []
      },
      {
-      "nev": "Húsleves + Magos csirkemell",
+      "nev": "Húsleves, Magos csirkemell",
       "kategoria": "menü",
       "variar": "B",
       "ar": 3100,
       "cimkek": []
      },
      {
-      "nev": "Húsleves + Sült csirkecomb",
+      "nev": "Húsleves, Sült csirkecomb",
       "kategoria": "menü",
       "variar": "C",
       "ar": 3150,
       "cimkek": []
      },
      {
-      "nev": "Húsleves + Rántott trappista",
+      "nev": "Húsleves, Rántott trappista",
       "kategoria": "menü",
       "variar": "D",
       "ar": 3100,
@@ -192,32 +192,32 @@
    },
    {
     "nap": "szerda",
-    "datum": "2026-07-15",
+    "datum": "2026-06-15",
     "zarva": false,
     "tetelek": [
      {
-      "nev": "Gulyás leves + Szilvás gombóc",
+      "nev": "Gulyás leves, Szilvás gombóc",
       "kategoria": "menü",
       "variar": "A",
       "ar": 2950,
       "cimkek": []
      },
      {
-      "nev": "Gulyás leves + Burgonyaszirmos rántott borda",
+      "nev": "Gulyás leves, Burgonyaszirmos rántott borda",
       "kategoria": "menü",
       "variar": "B",
       "ar": 3100,
       "cimkek": []
      },
      {
-      "nev": "Gulyás leves + Csirke gyros",
+      "nev": "Gulyás leves, Csirke gyros",
       "kategoria": "menü",
       "variar": "C",
       "ar": 3150,
       "cimkek": []
      },
      {
-      "nev": "Gulyás leves + Sült garnéla",
+      "nev": "Gulyás leves, Sült garnéla",
       "kategoria": "menü",
       "variar": "D",
       "ar": 3250,
@@ -227,32 +227,32 @@
    },
    {
     "nap": "csütörtök",
-    "datum": "2026-07-16",
+    "datum": "2026-06-16",
     "zarva": false,
     "tetelek": [
      {
-      "nev": "Fejtett bableves + Tarhonyás hús",
+      "nev": "Fejtett bableves, Tarhonyás hús",
       "kategoria": "menü",
       "variar": "A",
       "ar": 2950,
       "cimkek": []
      },
      {
-      "nev": "Fejtett bableves + Rántott csirkemell",
+      "nev": "Fejtett bableves, Rántott csirkemell",
       "kategoria": "menü",
       "variar": "B",
       "ar": 3100,
       "cimkek": []
      },
      {
-      "nev": "Fejtett bableves + Tarjasteak lyoni hagymával",
+      "nev": "Fejtett bableves, Tarjasteak lyoni hagymával",
       "kategoria": "menü",
       "variar": "C",
       "ar": 3150,
       "cimkek": []
      },
      {
-      "nev": "Fejtett bableves + Gombás ravioli",
+      "nev": "Fejtett bableves, Gombás ravioli",
       "kategoria": "menü",
       "variar": "D",
       "ar": 2750,
@@ -262,32 +262,32 @@
    },
    {
     "nap": "péntek",
-    "datum": "2026-07-17",
+    "datum": "2026-06-17",
     "zarva": false,
     "tetelek": [
      {
-      "nev": "Lebbencs leves + Lucskos káposzta",
+      "nev": "Lebbencs leves, Lucskos káposzta",
       "kategoria": "menü",
       "variar": "A",
       "ar": 2950,
       "cimkek": []
      },
      {
-      "nev": "Lebbencs leves + Rántott borda pankó morzsában",
+      "nev": "Lebbencs leves, Rántott borda pankó morzsában",
       "kategoria": "menü",
       "variar": "B",
       "ar": 3100,
       "cimkek": []
      },
      {
-      "nev": "Lebbencs leves + Roston csirkemell, cézár saláta",
+      "nev": "Lebbencs leves, Roston csirkemell, cézár saláta",
       "kategoria": "menü",
       "variar": "C",
       "ar": 3150,
       "cimkek": []
      },
      {
-      "nev": "Lebbencs leves + Gránátos halfilé rántva",
+      "nev": "Lebbencs leves, Gránátos halfilé rántva",
       "kategoria": "menü",
       "variar": "D",
       "ar": 3250,
@@ -297,32 +297,32 @@
    },
    {
     "nap": "szombat",
-    "datum": "2026-07-18",
+    "datum": "2026-06-18",
     "zarva": false,
     "tetelek": [
      {
-      "nev": "Tyúkhúsleves + Sertéskaraj csirkemájas raguval",
+      "nev": "Tyúkhúsleves, Sertéskaraj csirkemájas raguval",
       "kategoria": "menü",
       "variar": "A",
       "ar": 3350,
       "cimkek": []
      },
      {
-      "nev": "Tyúkhúsleves + Csirke cordon bleu",
+      "nev": "Tyúkhúsleves, Csirke cordon bleu",
       "kategoria": "menü",
       "variar": "B",
       "ar": 3650,
       "cimkek": []
      },
      {
-      "nev": "Tyúkhúsleves + Szarvaspörkölt",
+      "nev": "Tyúkhúsleves, Szarvaspörkölt",
       "kategoria": "menü",
       "variar": "C",
       "ar": 4850,
       "cimkek": []
      },
      {
-      "nev": "Tyúkhúsleves + Egészben sült aranydurbincs",
+      "nev": "Tyúkhúsleves, Egészben sült aranydurbincs",
       "kategoria": "menü",
       "variar": "D",
       "ar": 4650,
@@ -332,12 +332,14 @@
    },
    {
     "nap": "vasárnap",
-    "datum": "2026-07-19",
+    "datum": "2026-06-19",
     "zarva": true,
     "tetelek": []
    }
   ],
-  "forras": "https://www.szalaivendeglo.hu/index.php/hu/heti-menue"
+  "forras": "https://www.szalaivendeglo.hu/index.php/hu/heti-menue",
+  "auto": true,
+  "frissitve": "2026-07-17T12:44:59.478Z"
  },
  "faceroom": {
   "etterem": "Faceroom",
