@@ -660,8 +660,8 @@
  "soup4you": {
   "etterem": "Soup4You",
   "idoszak": {
-   "tol": "2026-07-16",
-   "ig": "2026-07-16"
+   "tol": "2026-07-17",
+   "ig": "2026-07-17"
   },
   "arak": {
    "leves": 1490,
@@ -671,36 +671,43 @@
   },
   "napok": [
    {
-    "nap": "csütörtök",
-    "datum": "2026-07-16",
+    "nap": "péntek",
+    "datum": "2026-07-17",
     "zarva": false,
     "tetelek": [
+     {
+      "nev": "HÁZI HÚSGOMBÓCLEVES FRISS ZÖLDSÉGEKKEL",
+      "kategoria": "leves",
+      "variar": null,
+      "ar": 1490,
+      "cimkek": []
+     },
+     {
+      "nev": "TEJSZÍNES FOKHAGYMA KRÉMLEVES, PIRÍTOTT KENYÉRKOCKÁVAL",
+      "kategoria": "leves",
+      "variar": null,
+      "ar": 1490,
+      "cimkek": []
+     },
      {
       "nev": "CSÜLKÖS BABGULYÁS HÁZI CSIPKEDETTEL, FRISS RÉPÁVAL, ZELLERREL",
       "kategoria": "leves",
       "variar": null,
-      "ar": null,
-      "cimkek": []
-     },
-     {
-      "nev": "BAKONYI BETYÁRLEVES BELESZAGGATOTT GALUSKÁVAL, FRISS ZÖLDSÉGEKKEL, GOMBÁVAL, TEJFÖLÖSEN",
-      "kategoria": "leves",
-      "variar": null,
-      "ar": null,
-      "cimkek": []
-     },
-     {
-      "nev": "KARFIOL LEVES FRISS KARFIOLBÓL, RÉPÁVAL, KARALÁBÉVAL, PETREZSELYEMGYÖKÉRREL",
-      "kategoria": "leves",
-      "variar": null,
-      "ar": null,
+      "ar": 1490,
       "cimkek": []
      },
      {
       "nev": "HIDEG TRÓPUSI GYÜMÖLCSKRÉMLEVES, HABBAL",
       "kategoria": "leves",
       "variar": null,
-      "ar": null,
+      "ar": 1490,
+      "cimkek": []
+     },
+     {
+      "nev": "Választott leves + CSIRKECOMBFILÉ PANKÓMORZSÁBAN, RIZI BIZIVEL",
+      "kategoria": "menü",
+      "variar": null,
+      "ar": 3400,
       "cimkek": []
      },
      {
@@ -715,13 +722,6 @@
       "kategoria": "menü",
       "variar": null,
       "ar": 3400,
-      "cimkek": []
-     },
-     {
-      "nev": "Választott leves + TEJSZÍNES SPENÓTFŐZELÉK, FŐTT TOJÁSSAL",
-      "kategoria": "menü",
-      "variar": null,
-      "ar": 2990,
       "cimkek": []
      },
      {
