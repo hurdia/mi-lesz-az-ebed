@@ -2,145 +2,8 @@
  "fuszeres": {
   "etterem": "A Fűszeres",
   "idoszak": {
-   "tol": null,
-   "ig": null
-  },
-  "arak": {
-   "leves": 1500,
-   "foetel": 2650,
-   "menu": 2990,
-   "csomagolas": 150
-  },
-  "napok": [
-   {
-    "nap": "hétfő",
-    "datum": null,
-    "zarva": false,
-    "tetelek": [
-     {
-      "nev": "Levendulás áfonyakrémleves",
-      "kategoria": "leves",
-      "variar": null,
-      "ar": null,
-      "cimkek": []
-     },
-     {
-      "nev": "Töltött cukkini",
-      "kategoria": "főétel",
-      "variar": null,
-      "ar": null,
-      "cimkek": [
-       "gluténmentes"
-      ]
-     }
-    ]
-   },
-   {
-    "nap": "kedd",
-    "datum": null,
-    "zarva": false,
-    "tetelek": [
-     {
-      "nev": "Tom Kha leves",
-      "kategoria": "leves",
-      "variar": null,
-      "ar": null,
-      "cimkek": [
-       "laktózmentes",
-       "gluténmentes"
-      ]
-     },
-     {
-      "nev": "BBQ tarja fokhagymás vajas burgonyával, kukoricasalátával",
-      "kategoria": "főétel",
-      "variar": null,
-      "ar": null,
-      "cimkek": [
-       "gluténmentes"
-      ]
-     }
-    ]
-   },
-   {
-    "nap": "szerda",
-    "datum": null,
-    "zarva": false,
-    "tetelek": [
-     {
-      "nev": "Póréhagyma krémleves bacon szórással",
-      "kategoria": "leves",
-      "variar": null,
-      "ar": null,
-      "cimkek": [
-       "gluténmentes"
-      ]
-     },
-     {
-      "nev": "Stroganoff csirkemell párolt rizzsel",
-      "kategoria": "főétel",
-      "variar": null,
-      "ar": null,
-      "cimkek": []
-     }
-    ]
-   },
-   {
-    "nap": "csütörtök",
-    "datum": null,
-    "zarva": false,
-    "tetelek": [
-     {
-      "nev": "Kacsa húsleves grízgombóccal",
-      "kategoria": "leves",
-      "variar": null,
-      "ar": null,
-      "cimkek": [
-       "laktózmentes"
-      ]
-     },
-     {
-      "nev": "Chili con carne ropogós pitával",
-      "kategoria": "főétel",
-      "variar": null,
-      "ar": null,
-      "cimkek": []
-     }
-    ]
-   },
-   {
-    "nap": "péntek",
-    "datum": null,
-    "zarva": false,
-    "tetelek": [
-     {
-      "nev": "Kínai gombaleves",
-      "kategoria": "leves",
-      "variar": null,
-      "ar": null,
-      "cimkek": [
-       "gluténmentes",
-       "laktózmentes"
-      ]
-     },
-     {
-      "nev": "Citromborsos csirkecomb zöldfűszeres burgonyapürével, savanyúsággal",
-      "kategoria": "főétel",
-      "variar": null,
-      "ar": null,
-      "cimkek": [
-       "gluténmentes"
-      ]
-     }
-    ]
-   }
-  ],
-  "forras": "https://www.facebook.com/AFuszeres"
- },
- "szalai": {
-  "etterem": "Szalai Vendéglő",
-  "idoszak": {
-   "tol": "2026-06-13",
-   "ig": "2026-06-19"
+   "tol": "2026-07-20",
+   "ig": "2026-07-24"
   },
   "arak": {
    "leves": null,
@@ -151,38 +14,84 @@
   "napok": [
    {
     "nap": "hétfő",
-    "datum": "2026-06-13",
+    "datum": "2026-07-20",
     "zarva": true,
     "tetelek": []
    },
    {
     "nap": "kedd",
-    "datum": "2026-06-14",
+    "datum": "2026-07-21",
+    "zarva": true,
+    "tetelek": []
+   },
+   {
+    "nap": "szerda",
+    "datum": "2026-07-22",
+    "zarva": true,
+    "tetelek": []
+   },
+   {
+    "nap": "csütörtök",
+    "datum": "2026-07-23",
+    "zarva": false,
+    "tetelek": []
+   },
+   {
+    "nap": "péntek",
+    "datum": "2026-07-24",
+    "zarva": false,
+    "tetelek": []
+   }
+  ],
+  "forras": "https://www.facebook.com/AFuszeres"
+ },
+ "szalai": {
+  "etterem": "Szalai Vendéglő",
+  "idoszak": {
+   "tol": "2026-07-20",
+   "ig": "2026-07-26"
+  },
+  "arak": {
+   "leves": null,
+   "foetel": null,
+   "menu": null,
+   "csomagolas": null
+  },
+  "napok": [
+   {
+    "nap": "hétfő",
+    "datum": "2026-07-20",
+    "zarva": true,
+    "tetelek": []
+   },
+   {
+    "nap": "kedd",
+    "datum": "2026-07-21",
     "zarva": false,
     "tetelek": [
      {
-      "nev": "Húsleves, Sertéskaraj snidlinges mártással",
+      "nev": "Húsleves + Lecsós sertéskaraj",
       "kategoria": "menü",
       "variar": "A",
       "ar": 2950,
       "cimkek": []
      },
      {
-      "nev": "Húsleves, Magos csirkemell",
+      "nev": "Húsleves + Csirkemell chilis panírban",
       "kategoria": "menü",
       "variar": "B",
       "ar": 3100,
       "cimkek": []
      },
      {
-      "nev": "Húsleves, Sült csirkecomb",
+      "nev": "Húsleves + Bolognai spagetti",
       "kategoria": "menü",
       "variar": "C",
       "ar": 3150,
       "cimkek": []
      },
      {
-      "nev": "Húsleves, Rántott trappista",
+      "nev": "Húsleves + Rántott gombafejek",
       "kategoria": "menü",
       "variar": "D",
       "ar": 3100,
@@ -192,32 +101,32 @@
    },
    {
     "nap": "szerda",
-    "datum": "2026-06-15",
+    "datum": "2026-07-22",
     "zarva": false,
     "tetelek": [
      {
-      "nev": "Gulyás leves, Szilvás gombóc",
+      "nev": "Csülkös bableves + Mákos guba",
       "kategoria": "menü",
       "variar": "A",
       "ar": 2950,
       "cimkek": []
      },
      {
-      "nev": "Gulyás leves, Burgonyaszirmos rántott borda",
+      "nev": "Csülkös bableves + Rántott borda",
       "kategoria": "menü",
       "variar": "B",
       "ar": 3100,
       "cimkek": []
      },
      {
-      "nev": "Gulyás leves, Csirke gyros",
+      "nev": "Csülkös bableves + Fetás csirkerolád",
       "kategoria": "menü",
       "variar": "C",
       "ar": 3150,
       "cimkek": []
      },
      {
-      "nev": "Gulyás leves, Sült garnéla",
+      "nev": "Csülkös bableves + Hekkfilé rántva",
       "kategoria": "menü",
       "variar": "D",
       "ar": 3250,
@@ -227,67 +136,67 @@
    },
    {
     "nap": "csütörtök",
-    "datum": "2026-06-16",
+    "datum": "2026-07-23",
     "zarva": false,
     "tetelek": [
      {
-      "nev": "Fejtett bableves, Tarhonyás hús",
+      "nev": "Karfiol leves + Töltött paprika",
       "kategoria": "menü",
       "variar": "A",
       "ar": 2950,
       "cimkek": []
      },
      {
-      "nev": "Fejtett bableves, Rántott csirkemell",
+      "nev": "Karfiol leves + Szezámmagos csirkemell",
       "kategoria": "menü",
       "variar": "B",
       "ar": 3100,
       "cimkek": []
      },
      {
-      "nev": "Fejtett bableves, Tarjasteak lyoni hagymával",
+      "nev": "Karfiol leves + Brassói aprópecsenye",
       "kategoria": "menü",
       "variar": "C",
       "ar": 3150,
       "cimkek": []
      },
      {
-      "nev": "Fejtett bableves, Gombás ravioli",
+      "nev": "Karfiol leves + Túrós csusza",
       "kategoria": "menü",
       "variar": "D",
-      "ar": 2750,
+      "ar": 2650,
       "cimkek": []
      }
     ]
    },
    {
     "nap": "péntek",
-    "datum": "2026-06-17",
+    "datum": "2026-07-24",
     "zarva": false,
     "tetelek": [
      {
-      "nev": "Lebbencs leves, Lucskos káposzta",
+      "nev": "Burgonyaleves + Tandori csirkeragu",
       "kategoria": "menü",
       "variar": "A",
       "ar": 2950,
       "cimkek": []
      },
      {
-      "nev": "Lebbencs leves, Rántott borda pankó morzsában",
+      "nev": "Burgonyaleves + Rántott borda",
       "kategoria": "menü",
       "variar": "B",
       "ar": 3100,
       "cimkek": []
      },
      {
-      "nev": "Lebbencs leves, Roston csirkemell, cézár saláta",
+      "nev": "Burgonyaleves + Rostélyos bors mártással",
       "kategoria": "menü",
       "variar": "C",
-      "ar": 3150,
+      "ar": 3250,
       "cimkek": []
      },
      {
-      "nev": "Lebbencs leves, Gránátos halfilé rántva",
+      "nev": "Burgonyaleves + Rántott fogasfilé",
       "kategoria": "menü",
       "variar": "D",
       "ar": 3250,
@@ -297,55 +206,53 @@
    },
    {
     "nap": "szombat",
-    "datum": "2026-06-18",
+    "datum": "2026-07-25",
     "zarva": false,
     "tetelek": [
      {
-      "nev": "Tyúkhúsleves, Sertéskaraj csirkemájas raguval",
+      "nev": "Húsleves csigatésztával + BBQ oldalas",
       "kategoria": "menü",
       "variar": "A",
       "ar": 3350,
       "cimkek": []
      },
      {
-      "nev": "Tyúkhúsleves, Csirke cordon bleu",
+      "nev": "Húsleves csigatésztával + Rántott csirkemell camemberttel töltve",
       "kategoria": "menü",
       "variar": "B",
       "ar": 3650,
       "cimkek": []
      },
      {
-      "nev": "Tyúkhúsleves, Szarvaspörkölt",
+      "nev": "Húsleves csigatésztával + Vörösboros marhapörkölt",
       "kategoria": "menü",
       "variar": "C",
       "ar": 4850,
       "cimkek": []
      },
      {
-      "nev": "Tyúkhúsleves, Egészben sült aranydurbincs",
+      "nev": "Húsleves csigatésztával + Sült lazac",
       "kategoria": "menü",
       "variar": "D",
-      "ar": 4650,
+      "ar": 4950,
       "cimkek": []
      }
     ]
    },
    {
     "nap": "vasárnap",
-    "datum": "2026-06-19",
+    "datum": "2026-07-26",
     "zarva": true,
     "tetelek": []
    }
   ],
-  "forras": "https://www.szalaivendeglo.hu/index.php/hu/heti-menue",
-  "auto": true,
-  "frissitve": "2026-07-17T12:44:59.478Z"
+  "forras": "https://www.szalaivendeglo.hu/index.php/hu/heti-menue"
  },
  "faceroom": {
   "etterem": "Faceroom",
   "idoszak": {
-   "tol": "2026-07-13",
-   "ig": "2026-07-17"
+   "tol": "2026-07-20",
+   "ig": "2026-07-24"
   },
   "arak": {
    "leves": 800,
@@ -356,32 +263,32 @@
   "napok": [
    {
     "nap": "hétfő",
-    "datum": "2026-07-13",
+    "datum": "2026-07-20",
     "zarva": false,
     "tetelek": [
      {
-      "nev": "Húsleves daragaluskával",
+      "nev": "Húsleves tésztával",
       "kategoria": "leves",
       "variar": null,
       "ar": null,
       "cimkek": []
      },
      {
-      "nev": "Zöldségleves",
+      "nev": "Zöldbableves",
       "kategoria": "leves",
       "variar": null,
       "ar": null,
       "cimkek": []
      },
      {
-      "nev": "Rántott szelet burgonyapürével",
+      "nev": "Cordon bleu (csirke) vegyes körettel",
       "kategoria": "főétel",
       "variar": null,
       "ar": null,
       "cimkek": []
      },
      {
-      "nev": "Hawaii csirkemell rizzsel",
+      "nev": "Cézársaláta csirkemellel",
       "kategoria": "főétel",
       "variar": null,
       "ar": null,
@@ -391,32 +298,32 @@
    },
    {
     "nap": "kedd",
-    "datum": "2026-07-14",
+    "datum": "2026-07-21",
     "zarva": false,
     "tetelek": [
      {
-      "nev": "Húsleves daragaluskával",
+      "nev": "Húsleves tésztával",
       "kategoria": "leves",
       "variar": null,
       "ar": null,
       "cimkek": []
      },
      {
-      "nev": "Baconös cukkinileves",
+      "nev": "Mentás zöldborsó krémleves",
       "kategoria": "leves",
       "variar": null,
       "ar": null,
       "cimkek": []
      },
      {
-      "nev": "Rántott szelet burgonyapürével",
+      "nev": "Cordon bleu (csirke) vegyes körettel",
       "kategoria": "főétel",
       "variar": null,
       "ar": null,
       "cimkek": []
      },
      {
-      "nev": "Paradicsomos húsgombóc spagettivel",
+      "nev": "Tempura bundás szűzcsíkok hideg mexikói babsalátával",
       "kategoria": "főétel",
       "variar": null,
       "ar": null,
@@ -426,32 +333,32 @@
    },
    {
     "nap": "szerda",
-    "datum": "2026-07-15",
+    "datum": "2026-07-22",
     "zarva": false,
     "tetelek": [
      {
-      "nev": "Húsleves daragaluskával",
+      "nev": "Húsleves tésztával",
       "kategoria": "leves",
       "variar": null,
       "ar": null,
       "cimkek": []
      },
      {
-      "nev": "Gyümölcsleves",
+      "nev": "Karalábéleves",
       "kategoria": "leves",
       "variar": null,
       "ar": null,
       "cimkek": []
      },
      {
-      "nev": "Rántott szelet burgonyapürével",
+      "nev": "Cordon bleu (csirke) vegyes körettel",
       "kategoria": "főétel",
       "variar": null,
       "ar": null,
       "cimkek": []
      },
      {
-      "nev": "Gyros tál csirkemellel",
+      "nev": "Csirkepaprikás galuskával",
       "kategoria": "főétel",
       "variar": null,
       "ar": null,
@@ -461,38 +368,38 @@
    },
    {
     "nap": "csütörtök",
-    "datum": "2026-07-16",
+    "datum": "2026-07-23",
     "zarva": true,
     "tetelek": []
    },
    {
     "nap": "péntek",
-    "datum": "2026-07-17",
+    "datum": "2026-07-24",
     "zarva": false,
     "tetelek": [
      {
-      "nev": "Húsleves daragaluskával",
+      "nev": "Húsleves tésztával",
       "kategoria": "leves",
       "variar": null,
       "ar": null,
       "cimkek": []
      },
      {
-      "nev": "Tárkonyos raguleves",
+      "nev": "Palócgulyás",
       "kategoria": "leves",
       "variar": null,
       "ar": null,
       "cimkek": []
      },
      {
-      "nev": "Rántott szelet burgonyapürével",
+      "nev": "Cordon bleu (csirke) vegyes körettel",
       "kategoria": "főétel",
       "variar": null,
       "ar": null,
       "cimkek": []
      },
      {
-      "nev": "Helyben készült túrógombóc fahéjas tejföllel",
+      "nev": "\"balatoni\" hekk sültburgonyával, uborkával",
       "kategoria": "főétel",
       "variar": null,
       "ar": null,
@@ -662,94 +569,8 @@
  "soup4you": {
   "etterem": "Soup4You",
   "idoszak": {
-   "tol": "2026-07-17",
-   "ig": "2026-07-17"
-  },
-  "arak": {
-   "leves": 1490,
-   "foetel": null,
-   "menu": null,
-   "csomagolas": null
-  },
-  "napok": [
-   {
-    "nap": "péntek",
-    "datum": "2026-07-17",
-    "zarva": false,
-    "tetelek": [
-     {
-      "nev": "HÁZI HÚSGOMBÓCLEVES FRISS ZÖLDSÉGEKKEL",
-      "kategoria": "leves",
-      "variar": null,
-      "ar": null,
-      "cimkek": []
-     },
-     {
-      "nev": "TEJSZÍNES FOKHAGYMA KRÉMLEVES, PIRÍTOTT KENYÉRKOCKÁVAL",
-      "kategoria": "leves",
-      "variar": null,
-      "ar": null,
-      "cimkek": []
-     },
-     {
-      "nev": "CSÜLKÖS BABGULYÁS HÁZI CSIPKEDETTEL, FRISS RÉPÁVAL, ZELLERREL",
-      "kategoria": "leves",
-      "variar": null,
-      "ar": null,
-      "cimkek": []
-     },
-     {
-      "nev": "HIDEG TRÓPUSI GYÜMÖLCSKRÉMLEVES, HABBAL",
-      "kategoria": "leves",
-      "variar": null,
-      "ar": null,
-      "cimkek": []
-     },
-     {
-      "nev": "Választott leves + CSIRKECOMBFILÉ PANKÓMORZSÁBAN, RIZI BIZIVEL",
-      "kategoria": "menü",
-      "variar": null,
-      "ar": 3400,
-      "cimkek": []
-     },
-     {
-      "nev": "Választott leves + CIGÁNYPECSENYE TEPSIS FŰSZERES BURGONYAGEREZDEKKEL, KAKASTARÉJ SZALONNÁVAL",
-      "kategoria": "menü",
-      "variar": null,
-      "ar": 3400,
-      "cimkek": []
-     },
-     {
-      "nev": "Választott leves + SZÉKELYKÁPOSZTA, HÁZI HÚSGOMBÓCCAL, TEJFÖLLEL",
-      "kategoria": "menü",
-      "variar": null,
-      "ar": 3400,
-      "cimkek": []
-     },
-     {
-      "nev": "Választott leves + RÁNTOTT KARAJ (2 szelet) PÁROLT RIZZSEL",
-      "kategoria": "menü",
-      "variar": null,
-      "ar": 3950,
-      "cimkek": []
-     },
-     {
-      "nev": "Választott leves + RÁNTOTT CSIRKEMELL, PÁROLT RIZZSEL",
-      "kategoria": "menü",
-      "variar": null,
-      "ar": 3950,
-      "cimkek": []
-     }
-    ]
-   }
-  ],
-  "forras": "https://www.facebook.com/soup4yougyor"
- },
- "marka": {
-  "etterem": "Márka étterem",
-  "idoszak": {
-   "tol": "2026-07-13",
-   "ig": "2026-07-17"
+   "tol": null,
+   "ig": null
   },
   "arak": {
    "leves": null,
@@ -760,7 +581,29 @@
   "napok": [
    {
     "nap": "hétfő",
-    "datum": "2026-07-13",
+    "datum": "2026-07-20",
+    "zarva": true,
+    "tetelek": []
+   }
+  ],
+  "forras": "https://www.facebook.com/soup4yougyor"
+ },
+ "marka": {
+  "etterem": "Márka étterem",
+  "idoszak": {
+   "tol": "2026-07-20",
+   "ig": "2026-07-24"
+  },
+  "arak": {
+   "leves": null,
+   "foetel": null,
+   "menu": null,
+   "csomagolas": null
+  },
+  "napok": [
+   {
+    "nap": "hétfő",
+    "datum": "2026-07-20",
     "zarva": false,
     "tetelek": [
      {
@@ -771,21 +614,21 @@
       "cimkek": []
      },
      {
-      "nev": "Csirkemell ragu \"jóasszony\" módra, párolt rizs",
+      "nev": "Túrós tészta",
       "kategoria": "főétel",
       "variar": null,
       "ar": 1990,
       "cimkek": []
      },
      {
-      "nev": "Bácskai rizses hús, csemege uborka",
+      "nev": "Hentes tokány, párolt rizs",
       "kategoria": "főétel",
       "variar": null,
       "ar": 1990,
       "cimkek": []
      },
      {
-      "nev": "Zöldborsó főzelék virslivel",
+      "nev": "Fejtett bab főzelék, sült debreceni",
       "kategoria": "főétel",
       "variar": null,
       "ar": 1490,
@@ -795,7 +638,7 @@
    },
    {
     "nap": "kedd",
-    "datum": "2026-07-14",
+    "datum": "2026-07-21",
     "zarva": false,
     "tetelek": [
      {
@@ -806,21 +649,21 @@
       "cimkek": []
      },
      {
-      "nev": "Paradicsomos húsgombóc, főtt burgonya",
+      "nev": "Roston borda paradicsomos, gombás, sonkás raguval, sajttal egybesütve, párolt rizs",
+      "kategoria": "főétel",
+      "variar": null,
+      "ar": 2090,
+      "cimkek": []
+     },
+     {
+      "nev": "Rántott camembert, áfonya lekvár, párolt rizs",
       "kategoria": "főétel",
       "variar": null,
       "ar": 1990,
       "cimkek": []
      },
      {
-      "nev": "Brassói aprópecsenye, steak burgonya",
-      "kategoria": "főétel",
-      "variar": null,
-      "ar": 2190,
-      "cimkek": []
-     },
-     {
-      "nev": "Tökfőzelék sertéspörkölttel",
+      "nev": "Krumplifőzelék sertéspörköttel",
       "kategoria": "főétel",
       "variar": null,
       "ar": 1490,
@@ -830,7 +673,7 @@
    },
    {
     "nap": "szerda",
-    "datum": "2026-07-15",
+    "datum": "2026-07-22",
     "zarva": false,
     "tetelek": [
      {
@@ -841,21 +684,21 @@
       "cimkek": []
      },
      {
-      "nev": "Erdélyi rakott káposzta",
+      "nev": "Rakott burgonya",
       "kategoria": "főétel",
       "variar": null,
       "ar": 2090,
       "cimkek": []
      },
      {
-      "nev": "Cordon bleu (karajból), burgonyapüré",
+      "nev": "Roston csirkemell meggymártással, párolt rizs",
       "kategoria": "főétel",
       "variar": null,
-      "ar": 2290,
+      "ar": 2190,
       "cimkek": []
      },
      {
-      "nev": "Spenót, főtt burgonya, 2 db főtt tojás",
+      "nev": "Vajbab főzelék, fasírt",
       "kategoria": "főétel",
       "variar": null,
       "ar": 1490,
@@ -865,7 +708,7 @@
    },
    {
     "nap": "csütörtök",
-    "datum": "2026-07-16",
+    "datum": "2026-07-23",
     "zarva": false,
     "tetelek": [
      {
@@ -876,38 +719,38 @@
       "cimkek": []
      },
      {
-      "nev": "Csirke raguleves (mellfiléből)",
+      "nev": "Húsleves zöldséggel, tésztával",
       "kategoria": "leves",
       "variar": null,
-      "ar": 1490,
+      "ar": 1090,
       "cimkek": []
      },
      {
-      "nev": "Töltött csirkecomb, rizibizi",
-      "kategoria": "főétel",
-      "variar": null,
-      "ar": 2090,
-      "cimkek": []
-     },
-     {
-      "nev": "Magyaros csirkemáj tarhonyával",
+      "nev": "Rántott karfiol, rizs, tartár",
       "kategoria": "főétel",
       "variar": null,
       "ar": 1990,
       "cimkek": []
      },
      {
-      "nev": "Lencsefőzelék, fasírt",
+      "nev": "Sertéspaprikás galuskával",
       "kategoria": "főétel",
       "variar": null,
-      "ar": 1490,
+      "ar": 2090,
+      "cimkek": []
+     },
+     {
+      "nev": "Paradicsomos káposzta, sült tarja",
+      "kategoria": "főétel",
+      "variar": null,
+      "ar": 1690,
       "cimkek": []
      }
     ]
    },
    {
     "nap": "péntek",
-    "datum": "2026-07-17",
+    "datum": "2026-07-24",
     "zarva": false,
     "tetelek": [
      {
@@ -918,31 +761,31 @@
       "cimkek": []
      },
      {
-      "nev": "Frankfurti leves",
+      "nev": "Gulyásleves",
       "kategoria": "leves",
       "variar": null,
-      "ar": 1490,
+      "ar": 1590,
       "cimkek": []
      },
      {
-      "nev": "Szezámmagos csirkemell rögök fűszeres burgonyával, majonézes káposztasaláta",
+      "nev": "Borzas csirkemell, párolt rizs",
       "kategoria": "főétel",
       "variar": null,
       "ar": 2390,
       "cimkek": []
      },
      {
-      "nev": "Bolognai spagetti",
+      "nev": "Brokkolis, tejszínes rakott penne csirkemell csíkokkal, sajttal egybesütve",
       "kategoria": "főétel",
       "variar": null,
-      "ar": 2090,
+      "ar": 1990,
       "cimkek": []
      },
      {
-      "nev": "Rizsfelfújt eperlekvárral",
+      "nev": "Gundel palacsinta",
       "kategoria": "desszert",
       "variar": null,
-      "ar": 1490,
+      "ar": 1690,
       "cimkek": []
      }
     ]
@@ -953,8 +796,8 @@
  "vital": {
   "etterem": "Vital Café & Bistro",
   "idoszak": {
-   "tol": "2026-07-13",
-   "ig": "2026-07-19"
+   "tol": "2026-07-20",
+   "ig": "2026-07-25"
   },
   "arak": {
    "leves": null,
@@ -965,128 +808,17 @@
   "napok": [
    {
     "nap": "hétfő",
-    "datum": "2026-07-13",
-    "zarva": false,
-    "tetelek": [
-     {
-      "nev": "Gyömbéres gyümölcskrémleves",
-      "kategoria": "leves",
-      "variar": null,
-      "ar": null,
-      "cimkek": [
-       "vegán",
-       "gluténmentes"
-      ]
-     },
-     {
-      "nev": "Napra-tejfölös zöldségleves",
-      "kategoria": "leves",
-      "variar": null,
-      "ar": null,
-      "cimkek": [
-       "vegán",
-       "gluténmentes"
-      ]
-     },
-     {
-      "nev": "Paradicsomos káposztafőzelék, zöldségfasírt",
-      "kategoria": "főétel",
-      "variar": null,
-      "ar": null,
-      "cimkek": [
-       "vegán",
-       "gluténmentes"
-      ]
-     },
-     {
-      "nev": "Babfasírt, köles, vegán tzatzikis saláta",
-      "kategoria": "főétel",
-      "variar": null,
-      "ar": null,
-      "cimkek": [
-       "vegán",
-       "gluténmentes"
-      ]
-     },
-     {
-      "nev": "Zöldségfasírt, napi saláta",
-      "kategoria": "főétel",
-      "variar": null,
-      "ar": null,
-      "cimkek": [
-       "vegán",
-       "gluténmentes"
-      ]
-     },
-     {
-      "nev": "Napi pohárdesszert",
-      "kategoria": "desszert",
-      "variar": null,
-      "ar": 1690,
-      "cimkek": [
-       "vegán",
-       "gluténmentes"
-      ]
-     },
-     {
-      "nev": "Zöld turmix",
-      "kategoria": "egyéb",
-      "variar": null,
-      "ar": 1790,
-      "cimkek": [
-       "vegán",
-       "gluténmentes"
-      ]
-     },
-     {
-      "nev": "Aszalt paradicsomos-burgonyás-zelleres vitamin-saláta",
-      "kategoria": "saláta",
-      "variar": null,
-      "ar": 3190,
-      "cimkek": [
-       "vegán",
-       "gluténmentes"
-      ]
-     },
-     {
-      "nev": "Magvas vegyes zöldsaláta",
-      "kategoria": "saláta",
-      "variar": null,
-      "ar": 3190,
-      "cimkek": [
-       "vegán",
-       "gluténmentes"
-      ]
-     },
-     {
-      "nev": "Napi szendvics",
-      "kategoria": "főétel",
-      "variar": null,
-      "ar": 1790,
-      "cimkek": [
-       "vegán",
-       "gluténmentes"
-      ]
-     },
-     {
-      "nev": "Gluténmentes zsemle",
-      "kategoria": "egyéb",
-      "variar": null,
-      "ar": 590,
-      "cimkek": [
-       "vegán",
-       "gluténmentes"
-      ]
-     }
-    ]
+    "datum": "2026-07-20",
+    "zarva": true,
+    "tetelek": []
    },
    {
     "nap": "kedd",
-    "datum": "2026-07-14",
+    "datum": "2026-07-21",
     "zarva": false,
     "tetelek": [
      {
-      "nev": "Hideg kapros tök-krémleves, pirított magvak",
+      "nev": "Mustáros zöldségkrémleves, kenyérkocka",
       "kategoria": "leves",
       "variar": null,
       "ar": null,
@@ -1096,7 +828,7 @@
       ]
      },
      {
-      "nev": "Zöldborsóleves",
+      "nev": "Tárkonyos zöldségraguleves",
       "kategoria": "leves",
       "variar": null,
       "ar": null,
@@ -1106,7 +838,7 @@
       ]
      },
      {
-      "nev": "Rozmaringos burgonyafőzelék, zöldségfasírt",
+      "nev": "Batáta-burgonya-répa főzelék, bundás zsemle",
       "kategoria": "főétel",
       "variar": null,
       "ar": null,
@@ -1116,7 +848,7 @@
       ]
      },
      {
-      "nev": "Ratatouille (padlizsános-cukkinis lecsó) kenyérkével",
+      "nev": "Hamis \"vargabéles\", vaníliamártás",
       "kategoria": "főétel",
       "variar": null,
       "ar": null,
@@ -1136,7 +868,7 @@
       ]
      },
      {
-      "nev": "Napi pohárdesszert",
+      "nev": "Napi pohárdesszert (édesítőszer / nádcukor)",
       "kategoria": "desszert",
       "variar": null,
       "ar": 1690,
@@ -1146,7 +878,7 @@
       ]
      },
      {
-      "nev": "Zöld turmix",
+      "nev": "Zöld turmix (napi kínálat alapján)",
       "kategoria": "egyéb",
       "variar": null,
       "ar": 1790,
@@ -1156,7 +888,7 @@
       ]
      },
      {
-      "nev": "Aszalt paradicsomos-burgonyás-zelleres vitamin-saláta",
+      "nev": "Görög saláta - növényi \"fetával\"",
       "kategoria": "saláta",
       "variar": null,
       "ar": 3190,
@@ -1166,7 +898,7 @@
       ]
      },
      {
-      "nev": "Magvas vegyes zöldsaláta",
+      "nev": "Magvas-barackos vegyes saláta tahinivel",
       "kategoria": "saláta",
       "variar": null,
       "ar": 3190,
@@ -1177,7 +909,7 @@
      },
      {
       "nev": "Napi szendvics",
-      "kategoria": "főétel",
+      "kategoria": "egyéb",
       "variar": null,
       "ar": 1790,
       "cimkek": [
@@ -1199,11 +931,11 @@
    },
    {
     "nap": "szerda",
-    "datum": "2026-07-15",
+    "datum": "2026-07-22",
     "zarva": false,
     "tetelek": [
      {
-      "nev": "Fahéjas gyümölcsleves",
+      "nev": "Mentás gyümölcsleves",
       "kategoria": "leves",
       "variar": null,
       "ar": null,
@@ -1213,7 +945,7 @@
       ]
      },
      {
-      "nev": "Majorannás burgonyaleves",
+      "nev": "Csorba leves (zöldbab, zöldborsó, burgonya)",
       "kategoria": "leves",
       "variar": null,
       "ar": null,
@@ -1223,7 +955,7 @@
       ]
      },
      {
-      "nev": "Cukkinis csicseriborsófőzelék, zöldségfasírt",
+      "nev": "\"Pisto\" - Andalúz lecsó, GM zsemle",
       "kategoria": "főétel",
       "variar": null,
       "ar": null,
@@ -1233,7 +965,7 @@
       ]
      },
      {
-      "nev": "Mogyoróvajas zöldségragu, köles",
+      "nev": "Zöldségfasírt, rozmaringos tepsis burgonya, mustáros zöldségmártás",
       "kategoria": "főétel",
       "variar": null,
       "ar": null,
@@ -1253,7 +985,7 @@
       ]
      },
      {
-      "nev": "Napi pohárdesszert",
+      "nev": "Napi pohárdesszert (édesítőszer / nádcukor)",
       "kategoria": "desszert",
       "variar": null,
       "ar": 1690,
@@ -1263,7 +995,7 @@
       ]
      },
      {
-      "nev": "Zöld turmix",
+      "nev": "Zöld turmix (napi kínálat alapján)",
       "kategoria": "egyéb",
       "variar": null,
       "ar": 1790,
@@ -1273,7 +1005,7 @@
       ]
      },
      {
-      "nev": "Aszalt paradicsomos-burgonyás-zelleres vitamin-saláta",
+      "nev": "Görög saláta - növényi \"fetával\"",
       "kategoria": "saláta",
       "variar": null,
       "ar": 3190,
@@ -1283,7 +1015,7 @@
       ]
      },
      {
-      "nev": "Magvas vegyes zöldsaláta",
+      "nev": "Magvas-barackos vegyes saláta tahinivel",
       "kategoria": "saláta",
       "variar": null,
       "ar": 3190,
@@ -1294,7 +1026,7 @@
      },
      {
       "nev": "Napi szendvics",
-      "kategoria": "főétel",
+      "kategoria": "egyéb",
       "variar": null,
       "ar": 1790,
       "cimkek": [
@@ -1316,11 +1048,11 @@
    },
    {
     "nap": "csütörtök",
-    "datum": "2026-07-16",
+    "datum": "2026-07-23",
     "zarva": false,
     "tetelek": [
      {
-      "nev": "Lengyel chlodnik (hideg céklaleves)",
+      "nev": "Brokkolikrémleves, kenyérkocka",
       "kategoria": "leves",
       "variar": null,
       "ar": null,
@@ -1330,7 +1062,7 @@
       ]
      },
      {
-      "nev": "Lencsegulyás",
+      "nev": "Vöröslencsés zöldségleves",
       "kategoria": "leves",
       "variar": null,
       "ar": null,
@@ -1340,7 +1072,7 @@
       ]
      },
      {
-      "nev": "Tárkonyos zöldbabfőzelék, bundás zsemle",
+      "nev": "Majorannás burgonyafőzelék, bundás zsemle",
       "kategoria": "főétel",
       "variar": null,
       "ar": null,
@@ -1350,7 +1082,7 @@
       ]
      },
      {
-      "nev": "Lecsós köleses rakott karfiol, saláta",
+      "nev": "Zöldségfasírt, hummusz, köles, zöldsaláta",
       "kategoria": "főétel",
       "variar": null,
       "ar": null,
@@ -1370,7 +1102,7 @@
       ]
      },
      {
-      "nev": "Napi pohárdesszert",
+      "nev": "Napi pohárdesszert (édesítőszer / nádcukor)",
       "kategoria": "desszert",
       "variar": null,
       "ar": 1690,
@@ -1380,7 +1112,7 @@
       ]
      },
      {
-      "nev": "Zöld turmix",
+      "nev": "Zöld turmix (napi kínálat alapján)",
       "kategoria": "egyéb",
       "variar": null,
       "ar": 1790,
@@ -1390,7 +1122,7 @@
       ]
      },
      {
-      "nev": "Aszalt paradicsomos-burgonyás-zelleres vitamin-saláta",
+      "nev": "Görög saláta - növényi \"fetával\"",
       "kategoria": "saláta",
       "variar": null,
       "ar": 3190,
@@ -1400,7 +1132,7 @@
       ]
      },
      {
-      "nev": "Magvas vegyes zöldsaláta",
+      "nev": "Magvas-barackos vegyes saláta tahinivel",
       "kategoria": "saláta",
       "variar": null,
       "ar": 3190,
@@ -1411,7 +1143,7 @@
      },
      {
       "nev": "Napi szendvics",
-      "kategoria": "főétel",
+      "kategoria": "egyéb",
       "variar": null,
       "ar": 1790,
       "cimkek": [
@@ -1433,11 +1165,11 @@
    },
    {
     "nap": "péntek",
-    "datum": "2026-07-17",
+    "datum": "2026-07-24",
     "zarva": false,
     "tetelek": [
      {
-      "nev": "Tonkababos gyümölcsleves",
+      "nev": "Gesztenyés gyümölcsleves",
       "kategoria": "leves",
       "variar": null,
       "ar": null,
@@ -1447,7 +1179,7 @@
       ]
      },
      {
-      "nev": "Csicseriborsós zöldségraguleves",
+      "nev": "\"Frankfurti\" leves",
       "kategoria": "leves",
       "variar": null,
       "ar": null,
@@ -1457,7 +1189,7 @@
       ]
      },
      {
-      "nev": "Kukoricás cukkinifőzelék, zöldségfasírt",
+      "nev": "Zöldborsófőzelék, zöldségfasírt",
       "kategoria": "főétel",
       "variar": null,
       "ar": null,
@@ -1467,7 +1199,7 @@
       ]
      },
      {
-      "nev": "Pásztorpite, saláta",
+      "nev": "Napratejfölös gombapaprikás, tészta, csemege uborka",
       "kategoria": "főétel",
       "variar": null,
       "ar": null,
@@ -1487,10 +1219,60 @@
       ]
      },
      {
-      "nev": "Napi pohárdesszert",
+      "nev": "Napi pohárdesszert (édesítőszer / nádcukor)",
       "kategoria": "desszert",
       "variar": null,
       "ar": 1690,
+      "cimkek": [
+       "vegán",
+       "gluténmentes"
+      ]
+     },
+     {
+      "nev": "Zöld turmix (napi kínálat alapján)",
+      "kategoria": "egyéb",
+      "variar": null,
+      "ar": 1790,
+      "cimkek": [
+       "vegán",
+       "gluténmentes"
+      ]
+     },
+     {
+      "nev": "Görög saláta - növényi \"fetával\"",
+      "kategoria": "saláta",
+      "variar": null,
+      "ar": 3190,
+      "cimkek": [
+       "vegán",
+       "gluténmentes"
+      ]
+     },
+     {
+      "nev": "Magvas-barackos vegyes saláta tahinivel",
+      "kategoria": "saláta",
+      "variar": null,
+      "ar": 3190,
+      "cimkek": [
+       "vegán",
+       "gluténmentes"
+      ]
+     },
+     {
+      "nev": "Napi szendvics",
+      "kategoria": "egyéb",
+      "variar": null,
+      "ar": 1790,
+      "cimkek": [
+       "vegán",
+       "gluténmentes"
+      ]
+     },
+     {
+      "nev": "Gluténmentes zsemle",
+      "kategoria": "egyéb",
+      "variar": null,
+      "ar": 590,
       "cimkek": [
        "vegán",
        "gluténmentes"
@@ -1500,11 +1282,11 @@
    },
    {
     "nap": "szombat",
-    "datum": "2026-07-18",
+    "datum": "2026-07-25",
     "zarva": false,
     "tetelek": [
      {
-      "nev": "Batátás zöldbableves",
+      "nev": "Rozmaringos zöldségkrémleves, kenyérkocka",
       "kategoria": "leves",
       "variar": null,
       "ar": null,
@@ -1514,7 +1296,7 @@
       ]
      },
      {
-      "nev": "Lencsefasírt, majonézzel, magvas zöldsalátával",
+      "nev": "Töltött sült kaliforniai paprika, \"sajtmártás\"",
       "kategoria": "főétel",
       "variar": null,
       "ar": null,
@@ -1534,7 +1316,7 @@
       ]
      },
      {
-      "nev": "Napi pohárdesszert",
+      "nev": "Napi pohárdesszert (édesítőszer / nádcukor)",
       "kategoria": "desszert",
       "variar": null,
       "ar": 1690,
@@ -1542,14 +1324,58 @@
        "vegán",
        "gluténmentes"
       ]
+     },
+     {
+      "nev": "Zöld turmix (napi kínálat alapján)",
+      "kategoria": "egyéb",
+      "variar": null,
+      "ar": 1790,
+      "cimkek": [
+       "vegán",
+       "gluténmentes"
+      ]
+     },
+     {
+      "nev": "Görög saláta - növényi \"fetával\"",
+      "kategoria": "saláta",
+      "variar": null,
+      "ar": 3190,
+      "cimkek": [
+       "vegán",
+       "gluténmentes"
+      ]
+     },
+     {
+      "nev": "Magvas-barackos vegyes saláta tahinivel",
+      "kategoria": "saláta",
+      "variar": null,
+      "ar": 3190,
+      "cimkek": [
+       "vegán",
+       "gluténmentes"
+      ]
+     },
+     {
+      "nev": "Napi szendvics",
+      "kategoria": "egyéb",
+      "variar": null,
+      "ar": 1790,
+      "cimkek": [
+       "vegán",
+       "gluténmentes"
+      ]
+     },
+     {
+      "nev": "Gluténmentes zsemle",
+      "kategoria": "egyéb",
+      "variar": null,
+      "ar": 590,
+      "cimkek": [
+       "vegán",
+       "gluténmentes"
+      ]
      }
     ]
-   },
-   {
-    "nap": "vasárnap",
-    "datum": "2026-07-19",
-    "zarva": true,
-    "tetelek": []
    }
   ],
   "forras": "https://www.vitalcafebistro.hu/hetimenu.html"
