@@ -413,8 +413,8 @@
  "dolcevita": {
   "etterem": "La Dolce Vita",
   "idoszak": {
-   "tol": "2026-07-13",
-   "ig": "2026-07-17"
+   "tol": "2026-07-20",
+   "ig": "2026-07-24"
   },
   "arak": {
    "leves": 890,
@@ -425,7 +425,7 @@
   "napok": [
    {
     "nap": "hétfő",
-    "datum": "2026-07-13",
+    "datum": "2026-07-20",
     "zarva": false,
     "tetelek": [
      {
@@ -453,7 +453,7 @@
    },
    {
     "nap": "kedd",
-    "datum": "2026-07-14",
+    "datum": "2026-07-21",
     "zarva": false,
     "tetelek": [
      {
@@ -481,7 +481,7 @@
    },
    {
     "nap": "szerda",
-    "datum": "2026-07-15",
+    "datum": "2026-07-22",
     "zarva": false,
     "tetelek": [
      {
@@ -509,7 +509,7 @@
    },
    {
     "nap": "csütörtök",
-    "datum": "2026-07-16",
+    "datum": "2026-07-23",
     "zarva": false,
     "tetelek": [
      {
@@ -537,7 +537,7 @@
    },
    {
     "nap": "péntek",
-    "datum": "2026-07-17",
+    "datum": "2026-07-24",
     "zarva": false,
     "tetelek": [
      {
