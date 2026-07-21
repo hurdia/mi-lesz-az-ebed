@@ -711,8 +711,8 @@
  "soup4you": {
   "etterem": "Soup4You",
   "idoszak": {
-   "tol": null,
-   "ig": null
+   "tol": "2026-07-21",
+   "ig": "2026-07-21"
   },
   "arak": {
    "leves": null,
@@ -722,10 +722,60 @@
   },
   "napok": [
    {
-    "nap": "hétfő",
-    "datum": "2026-07-20",
-    "zarva": true,
-    "tetelek": []
+    "nap": "kedd",
+    "datum": "2026-07-21",
+    "zarva": false,
+    "tetelek": [
+     {
+      "nev": "Májgombóc leves zöldségekkel",
+      "kategoria": "leves",
+      "variar": null,
+      "ar": 1490,
+      "cimkek": []
+     },
+     {
+      "nev": "Tejfölös zöldbableves bébirépával, zellerrel, beleszaggatott galuskával",
+      "kategoria": "leves",
+      "variar": null,
+      "ar": 1490,
+      "cimkek": []
+     },
+     {
+      "nev": "Hideg szamóca krémleves, habbal",
+      "kategoria": "leves",
+      "variar": null,
+      "ar": 1490,
+      "cimkek": []
+     },
+     {
+      "nev": "Választott leves + Sonkával töltött trappista sajt frissen rántva, párolt rizs & tartár",
+      "kategoria": "menü",
+      "variar": null,
+      "ar": 3400,
+      "cimkek": []
+     },
+     {
+      "nev": "Választott leves + Tejszínes petrezselymes zöldborsófőzelék, sült virslivel",
+      "kategoria": "menü",
+      "variar": null,
+      "ar": 3400,
+      "cimkek": []
+     },
+     {
+      "nev": "Választott leves + Rántott karaj (2 szelet) párolt rizzsel",
+      "kategoria": "menü",
+      "variar": null,
+      "ar": 3950,
+      "cimkek": []
+     },
+     {
+      "nev": "Választott leves + Rántott csirkemell, párolt rizzsel",
+      "kategoria": "menü",
+      "variar": null,
+      "ar": 3950,
+      "cimkek": []
+     }
+    ]
    }
   ],
   "forras": "https://www.facebook.com/soup4yougyor"
