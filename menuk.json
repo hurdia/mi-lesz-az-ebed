@@ -70,32 +70,62 @@
     "zarva": false,
     "tetelek": [
      {
-      "nev": "Húsleves + Lecsós sertéskaraj",
-      "kategoria": "menü",
+      "nev": "Húsleves",
+      "kategoria": "leves",
+      "variar": "A",
+      "ar": null,
+      "cimkek": []
+     },
+     {
+      "nev": "Lecsós sertéskaraj",
+      "kategoria": "főétel",
       "variar": "A",
       "ar": 2950,
       "cimkek": []
      },
      {
-      "nev": "Húsleves + Csirkemell chilis panírban",
-      "kategoria": "menü",
+      "nev": "Húsleves",
+      "kategoria": "leves",
+      "variar": "B",
+      "ar": null,
+      "cimkek": []
+     },
+     {
+      "nev": "Csirkemell chilis panírban",
+      "kategoria": "főétel",
       "variar": "B",
       "ar": 3100,
       "cimkek": []
      },
      {
-      "nev": "Húsleves + Bolognai spagetti",
-      "kategoria": "menü",
+      "nev": "Húsleves",
+      "kategoria": "leves",
+      "variar": "C",
+      "ar": null,
+      "cimkek": []
+     },
+     {
+      "nev": "Bolognai spagetti",
+      "kategoria": "főétel",
       "variar": "C",
       "ar": 3150,
       "cimkek": []
      },
      {
-      "nev": "Húsleves + Rántott gombafejek",
-      "kategoria": "menü",
+      "nev": "Húsleves",
+      "kategoria": "leves",
+      "variar": "D",
+      "ar": null,
+      "cimkek": []
+     },
+     {
+      "nev": "Rántott gombafejek",
+      "kategoria": "főétel",
       "variar": "D",
       "ar": 3100,
-      "cimkek": []
+      "cimkek": [
+       "vegetáriánus"
+      ]
      }
     ]
    },
@@ -105,29 +135,59 @@
     "zarva": false,
     "tetelek": [
      {
-      "nev": "Csülkös bableves + Mákos guba",
-      "kategoria": "menü",
+      "nev": "Csülkös bableves",
+      "kategoria": "leves",
       "variar": "A",
-      "ar": 2950,
+      "ar": null,
       "cimkek": []
      },
      {
-      "nev": "Csülkös bableves + Rántott borda",
-      "kategoria": "menü",
+      "nev": "Mákos guba",
+      "kategoria": "főétel",
+      "variar": "A",
+      "ar": 2950,
+      "cimkek": [
+       "vegetáriánus"
+      ]
+     },
+     {
+      "nev": "Csülkös bableves",
+      "kategoria": "leves",
+      "variar": "B",
+      "ar": null,
+      "cimkek": []
+     },
+     {
+      "nev": "Rántott borda",
+      "kategoria": "főétel",
       "variar": "B",
       "ar": 3100,
       "cimkek": []
      },
      {
-      "nev": "Csülkös bableves + Fetás csirkerolád",
-      "kategoria": "menü",
+      "nev": "Csülkös bableves",
+      "kategoria": "leves",
+      "variar": "C",
+      "ar": null,
+      "cimkek": []
+     },
+     {
+      "nev": "Fetás csirkerolád",
+      "kategoria": "főétel",
       "variar": "C",
       "ar": 3150,
       "cimkek": []
      },
      {
-      "nev": "Csülkös bableves + Hekkfilé rántva",
-      "kategoria": "menü",
+      "nev": "Csülkös bableves",
+      "kategoria": "leves",
+      "variar": "D",
+      "ar": null,
+      "cimkek": []
+     },
+     {
+      "nev": "Hekkfilé rántva",
+      "kategoria": "főétel",
       "variar": "D",
       "ar": 3250,
       "cimkek": []
@@ -140,32 +200,62 @@
     "zarva": false,
     "tetelek": [
      {
-      "nev": "Karfiol leves + Töltött paprika",
-      "kategoria": "menü",
+      "nev": "Karfiol leves",
+      "kategoria": "leves",
+      "variar": "A",
+      "ar": null,
+      "cimkek": []
+     },
+     {
+      "nev": "Töltött paprika",
+      "kategoria": "főétel",
       "variar": "A",
       "ar": 2950,
       "cimkek": []
      },
      {
-      "nev": "Karfiol leves + Szezámmagos csirkemell",
-      "kategoria": "menü",
+      "nev": "Karfiol leves",
+      "kategoria": "leves",
+      "variar": "B",
+      "ar": null,
+      "cimkek": []
+     },
+     {
+      "nev": "Szezámmagos csirkemell",
+      "kategoria": "főétel",
       "variar": "B",
       "ar": 3100,
       "cimkek": []
      },
      {
-      "nev": "Karfiol leves + Brassói aprópecsenye",
-      "kategoria": "menü",
+      "nev": "Karfiol leves",
+      "kategoria": "leves",
+      "variar": "C",
+      "ar": null,
+      "cimkek": []
+     },
+     {
+      "nev": "Brassói aprópecsenye",
+      "kategoria": "főétel",
       "variar": "C",
       "ar": 3150,
       "cimkek": []
      },
      {
-      "nev": "Karfiol leves + Túrós csusza",
-      "kategoria": "menü",
+      "nev": "Karfiol leves",
+      "kategoria": "leves",
+      "variar": "D",
+      "ar": null,
+      "cimkek": []
+     },
+     {
+      "nev": "Túrós csusza",
+      "kategoria": "főétel",
       "variar": "D",
       "ar": 2650,
-      "cimkek": []
+      "cimkek": [
+       "vegetáriánus"
+      ]
      }
     ]
    },
@@ -175,29 +265,57 @@
     "zarva": false,
     "tetelek": [
      {
-      "nev": "Burgonyaleves + Tandori csirkeragu",
-      "kategoria": "menü",
+      "nev": "Burgonyaleves",
+      "kategoria": "leves",
+      "variar": "A",
+      "ar": null,
+      "cimkek": []
+     },
+     {
+      "nev": "Tandori csirkeragu",
+      "kategoria": "főétel",
       "variar": "A",
       "ar": 2950,
       "cimkek": []
      },
      {
-      "nev": "Burgonyaleves + Rántott borda",
-      "kategoria": "menü",
+      "nev": "Burgonyaleves",
+      "kategoria": "leves",
+      "variar": "B",
+      "ar": null,
+      "cimkek": []
+     },
+     {
+      "nev": "Rántott borda",
+      "kategoria": "főétel",
       "variar": "B",
       "ar": 3100,
       "cimkek": []
      },
      {
-      "nev": "Burgonyaleves + Rostélyos bors mártással",
-      "kategoria": "menü",
+      "nev": "Burgonyaleves",
+      "kategoria": "leves",
+      "variar": "C",
+      "ar": null,
+      "cimkek": []
+     },
+     {
+      "nev": "Rostélyos bors mártással",
+      "kategoria": "főétel",
       "variar": "C",
       "ar": 3250,
       "cimkek": []
      },
      {
-      "nev": "Burgonyaleves + Rántott fogasfilé",
-      "kategoria": "menü",
+      "nev": "Burgonyaleves",
+      "kategoria": "leves",
+      "variar": "D",
+      "ar": null,
+      "cimkek": []
+     },
+     {
+      "nev": "Rántott fogasfilé",
+      "kategoria": "főétel",
       "variar": "D",
       "ar": 3250,
       "cimkek": []
@@ -210,29 +328,57 @@
     "zarva": false,
     "tetelek": [
      {
-      "nev": "Húsleves csigatésztával + BBQ oldalas",
-      "kategoria": "menü",
+      "nev": "Húsleves csigatésztával",
+      "kategoria": "leves",
+      "variar": "A",
+      "ar": null,
+      "cimkek": []
+     },
+     {
+      "nev": "BBQ oldalas",
+      "kategoria": "főétel",
       "variar": "A",
       "ar": 3350,
       "cimkek": []
      },
      {
-      "nev": "Húsleves csigatésztával + Rántott csirkemell camemberttel töltve",
-      "kategoria": "menü",
+      "nev": "Húsleves csigatésztával",
+      "kategoria": "leves",
+      "variar": "B",
+      "ar": null,
+      "cimkek": []
+     },
+     {
+      "nev": "Rántott csirkemell camemberttel töltve",
+      "kategoria": "főétel",
       "variar": "B",
       "ar": 3650,
       "cimkek": []
      },
      {
-      "nev": "Húsleves csigatésztával + Vörösboros marhapörkölt",
-      "kategoria": "menü",
+      "nev": "Húsleves csigatésztával",
+      "kategoria": "leves",
+      "variar": "C",
+      "ar": null,
+      "cimkek": []
+     },
+     {
+      "nev": "Vörösboros marhapörkölt",
+      "kategoria": "főétel",
       "variar": "C",
       "ar": 4850,
       "cimkek": []
      },
      {
-      "nev": "Húsleves csigatésztával + Sült lazac",
-      "kategoria": "menü",
+      "nev": "Húsleves csigatésztával",
+      "kategoria": "leves",
+      "variar": "D",
+      "ar": null,
+      "cimkek": []
+     },
+     {
+      "nev": "Sült lazac",
+      "kategoria": "főétel",
       "variar": "D",
       "ar": 4950,
       "cimkek": []
@@ -248,7 +394,7 @@
   ],
   "forras": "https://www.szalaivendeglo.hu/index.php/hu/heti-menue",
   "auto": true,
-  "frissitve": "2026-07-21T13:06:41.218Z"
+  "frissitve": "2026-07-22T15:21:25.515Z"
  },
  "faceroom": {
   "etterem": "Faceroom",
